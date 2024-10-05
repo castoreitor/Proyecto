@@ -1,0 +1,23 @@
+{
+  "name": "proyecto",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.3.3",
+    "cors": "^2.8.5",
+    "ejs": "^3.1.10",
+    "express": "^4.21.0",
+    "mysql": "^2.18.1",
+    "mysql2": "^3.11.2",
+    "nodemon": "^3.1.7",
+    "path": "^0.12.7",
+    "url": "^0.11.4"
+  }
+}
