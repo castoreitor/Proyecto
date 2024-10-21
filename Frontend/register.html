@@ -101,10 +101,10 @@
                 <a href="shop.html" class="nav-link">Shop</a>
               </li>
               <li class="nav-item">
-                <a href="register.html" class="nav-link">Register</a>
+                <a href="register.html" class="nav-link active">Register</a>
               </li>
               <li class="nav-item">
-                <a href="login.html" class="nav-link active">Login</a>
+                <a href="login.html" class="nav-link">Login</a>
               </li>
               <li class="nav-item dropdown">
                 <a
@@ -166,7 +166,7 @@
                         <div class="media">
                           <img
                             class="d-flex mr-3"
-                            src="assets/img/logo/logo.jepg"
+                            src="assets/img/logo/avatar.jpg"
                             width="60"
                           />
                           <div class="media-body">
@@ -183,7 +183,7 @@
                         <div class="media">
                           <img
                             class="d-flex mr-3"
-                            src="assets/img/logo/logo.jepg"
+                            src="assets/img/logo/avatar.jpg"
                             width="60"
                           />
                           <div class="media-body">
@@ -200,7 +200,7 @@
                         <div class="media">
                           <img
                             class="d-flex mr-3"
-                            src="assets/img/logo/logo.jepg"
+                            src="assets/img/logo/avatar.jpg"
                             width="60"
                           />
                           <div class="media-body">
@@ -245,7 +245,7 @@
           style="background-image: url('assets/img/bg-header.jpg')"
         >
           <div class="container">
-            <h1 class="pt-5">Login Page</h1>
+            <h1 class="pt-5">Register Page</h1>
             <p class="lead">Save time and leave the groceries to us.</p>
 
             <div class="card card-login mb-5">
@@ -255,10 +255,43 @@
                     <div class="col-md-12">
                       <input
                         class="form-control"
-                        id="email"
                         type="text"
                         required=""
+                        id="name"
+                        placeholder="Nombre"
+                      />
+                    </div>
+                  </div>
+                  <div class="form-group row mt-3">
+                    <div class="col-md-12">
+                      <input
+                        class="form-control"
+                        type="text"
+                        required=""
+                        id="lastName"
+                        placeholder="Apellido"
+                      />
+                    </div>
+                  </div>
+                  <div class="form-group row mt-3">
+                    <div class="col-md-12">
+                      <input
+                        class="form-control"
+                        type="email"
+                        required=""
+                        id="email"
                         placeholder="Correo electronico"
+                      />
+                    </div>
+                  </div>
+                  <div class="form-group row mt-3">
+                    <div class="col-md-12">
+                      <input
+                        class="form-control"
+                        type="phone"
+                        required=""
+                        id="phone"
+                        placeholder="Telefono"
                       />
                     </div>
                   </div>
@@ -266,36 +299,45 @@
                     <div class="col-md-12">
                       <input
                         class="form-control"
-                        id="password"
                         type="password"
                         required=""
+                        id="password"
                         placeholder="Contraseña"
                       />
                     </div>
                   </div>
                   <div class="form-group row">
-                    <div
-                      class="col-md-12 d-flex justify-content-between align-items-center"
-                    >
+                    <div class="col-md-12">
+                      <input
+                        class="form-control"
+                        type="password"
+                        required=""
+                        id="confirmPassword"
+                        placeholder="Confirmar Contraseña"
+                      />
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <div class="col-md-12">
                       <div class="checkbox">
-                        <input id="checkbox0" type="checkbox" name="remember" />
-                        <label for="checkbox0" class="mb-0">
-                          Remember Me?
+                        <input id="checkbox0" type="checkbox" name="terms" />
+                        <label for="checkbox0" class="mb-0"
+                          >I Agree with
+                          <a href="terms.html" class="text-light"
+                            >Terms & Conditions</a
+                          >
                         </label>
                       </div>
-                      <a href="login.html" class="text-light"
-                        ><i class="fa fa-bell"></i> Forgot password?</a
-                      >
                     </div>
                   </div>
                   <div class="form-group row text-center mt-4">
                     <div class="col-md-12">
                       <button
                         type="submit"
-                        id="enviar"
+                        id="crear"
                         class="btn btn-primary btn-block text-uppercase"
                       >
-                        Log In
+                        Register
                       </button>
                     </div>
                   </div>
@@ -424,6 +466,6 @@
       src="assets/packages/bootstrap-touchspin/bootstrap-touchspin.js"
     ></script>
     <script type="text/javascript" src="assets/js/theme.js"></script>
-    <script src="login.js"></script>
+    <script src="registrarCliente.js"></script>
   </body>
 </html>
