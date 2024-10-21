@@ -21,7 +21,7 @@ const comprobar = () => {
       alert("Error comprobando - Usario o contraseña errados");
     } else {
       alert("Acceso con exito");
-      location.href = "productos.html";
+      location.href = "index.html";
     }
   });
 };
