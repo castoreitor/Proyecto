@@ -13,7 +13,7 @@ const clienteController = {
       }
     });
   },
-  /*
+
   getClientesId: (req, res) => {
     const { ID_Cliente } = req.params;
 
@@ -34,8 +34,8 @@ const clienteController = {
         }
       }
     });
-  }, 
-*/
+  },
+
   login: (req, res) => {
     const { Correo_electronico, contraseña } = req.body;
 
