@@ -96,11 +96,20 @@
           >
             <!-- Navbar Menu -->
             <ul class="navbar-nav ml-auto">
-              <li class="nav-item">
+              <li class="nav-item" id="register">
                 <a href="register.html" class="nav-link">Register</a>
               </li>
-              <li class="nav-item">
+              <li class="nav-item" id="login">
                 <a href="login.html" class="nav-link">Login</a>
+                <script src="usuarioLogin.js"></script>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="btn btn-primary btn-block text-uppercase"
+                  src="logout.js"
+                  id="salir"
+                  >Logout</a
+                >
               </li>
 
               <!-- Contenedor para el avatar y carrito -->
@@ -1487,6 +1496,5 @@
       src="assets/packages/bootstrap-touchspin/bootstrap-touchspin.js"
     ></script>
     <script type="text/javascript" src="assets/js/theme.js"></script>
-    <script src="usuarioLogin.js"></script>
   </body>
 </html>
