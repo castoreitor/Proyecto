@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>Tienda Orgánica | Registro</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,700"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="all"
+      href="assets/packages/bootstrap/bootstrap.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="all"
+      href="assets/css/theme.css"
+    />
+  </head>
+  <body>
+    <div class="page-header">
+      <div
+        class="jumbotron jumbotron-bg text-center rounded-0"
+        style="background-image: url('assets/img/bg-header.jpg')"
+      ></div>
+    </div>
+    <div id="page-content" class="page-content">
+      <div class="container mt-5">
+        <!-- Tabla de productos -->
+        <h1 class="text-center mt-5">Lista de Productos</h1>
+        <table
+          class="table table-striped table-hover table-bordered"
+          id="productTable"
+        >
+          <thead class="thead-dark">
+            <tr>
+              <th>ID Producto</th>
+              <th>Nombre</th>
+              <th>Descripción</th>
+              <th>Precio Unitario</th>
+              <th>Stock</th>
+              <th>Categoría</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Las filas de productos se agregarán aquí a través del backend -->
+          </tbody>
+        </table>
+
+        <!-- Formulario para el registro de productos -->
+        <h2 class="text-center mt-5">Registro de Productos</h2>
+        <form id="productForm" action="tu_backend_endpoint.php" method="POST">
+          <div class="form-row">
+            <div class="form-group col-md-4">
+              <label for="idProducto">ID Producto</label>
+              <input
+                type="text"
+                class="form-control"
+                id="ID_producto"
+                name="ID_producto"
+                required
+              />
+            </div>
+            <div class="form-group col-md-4">
+              <label for="nombre">Nombre</label>
+              <input
+                type="text"
+                class="form-control"
+                id="Nombre"
+                name="Nombre"
+                required
+              />
+            </div>
+            <div class="form-group col-md-4">
+              <label for="descripcion">Descripción</label>
+              <input
+                type="text"
+                class="form-control"
+                id="Descripcion"
+                name="Descripcion"
+                required
+              />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-4">
+              <label for="precio">Precio Unitario</label>
+              <input
+                type="number"
+                class="form-control"
+                id="Precio_unitario"
+                name="precio"
+                step="0.01"
+                required
+              />
+            </div>
+            <div class="form-group col-md-4">
+              <label for="stock">Stock</label>
+              <input
+                type="number"
+                class="form-control"
+                id="Stock"
+                name="Stock"
+                required
+              />
+            </div>
+            <div class="form-group col-md-4">
+              <label for="categoria">Categoría</label>
+              <select
+                class="form-control"
+                id="Categoria"
+                name="Categoria"
+                required
+              >
+                <option value="" disabled selected>
+                  Seleccionar categoría
+                </option>
+                <option value="frutas">Frutas</option>
+                <option value="vegetales">Vegetales</option>
+                <option value="congelados">Congelados</option>
+                <option value="enlatados">Enlatados</option>
+                <option value="carnes">Carnes</option>
+                <option value="peces">Peces</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group row text-center mt-4">
+            <div class="col-md-3">
+              <button
+                type="reset"
+                id="limpiar"
+                class="btn btn-secondary btn-block"
+              >
+                Limpiar
+              </button>
+            </div>
+            <div class="col-md-3">
+              <button
+                type="submit"
+                id="crearProducto"
+                class="btn btn-primary btn-block"
+              >
+                Crear
+              </button>
+            </div>
+            <div class="col-md-3">
+              <button
+                type="button"
+                class="btn btn-info btn-block"
+                onclick="location.href='shop.html'"
+              >
+                Salir
+              </button>
+            </div>
+          </div>
+        </form>
+
+        <!-- Formulario para consultar productos -->
+        <h2 class="text-center mt-5">Consultar Producto</h2>
+        <form
+          id="consultarForm"
+          action="PprocesoC.js"
+          method="GET"
+          class="mx-auto"
+          style="max-width: 400px"
+        >
+          <div class="form-group">
+            <label for="consultarId">ID Producto</label>
+            <input
+              type="text"
+              class="form-control"
+              id="ID_producto"
+              name="ID_producto"
+              required
+            />
+          </div>
+          <div class="form-group d-flex justify-content-between">
+            <button type="submit" class="btn btn-primary flex-fill mr-2">
+              Consultar
+            </button>
+            <button type="button" class="btn btn-danger flex-fill" id="borrar">
+              Borrar
+            </button>
+          </div>
+        </form>
+        <div id="consultaResultado" class="text-center">
+          <!-- Resultados de la consulta se mostrarán aquí a través del backend -->
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <p class="copyright">
+        &copy; Tienda Orgánica. Todos los derechos reservados.
+      </p>
+    </footer>
+
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/theme.js"></script>
+  </body>
+</html>

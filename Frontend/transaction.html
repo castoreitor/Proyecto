@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Freshcery | Groceries Organic Store</title>
+    <title>Tienda Orgánica de Abarrotes</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
@@ -77,8 +77,8 @@
       >
         <div class="container">
           <!-- Navbar Brand -->
-          <a href="index.html" class="navbar-brand">
-            <img src="assets/img/logo/logo.png" alt="" />
+          <a class="navbar-brand">
+            <img src="assets/img/logo/logo.jpeg" alt="Logo" />
           </a>
 
           <!-- Toggle Button -->
@@ -98,13 +98,13 @@
             <!-- Navbar Menu -->
             <ul class="navbar-nav ml-auto">
               <li class="nav-item">
-                <a href="shop.html" class="nav-link">Shop</a>
+                <a href="shop.html" class="nav-link">Tienda</a>
               </li>
               <li class="nav-item">
-                <a href="register.html" class="nav-link">Register</a>
+                <a href="register.html" class="nav-link">Registrarse</a>
               </li>
               <li class="nav-item">
-                <a href="login.html" class="nav-link">Login</a>
+                <a href="login.html" class="nav-link">Iniciar Sesión</a>
               </li>
               <li class="nav-item dropdown">
                 <a
@@ -119,13 +119,15 @@
                   <div class="avatar-header">
                     <img src="assets/img/logo/avatar.jpg" />
                   </div>
-                  John Doe
+                  Juan Pérez
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                   <a class="dropdown-item" href="transaction.html"
-                    >Transactions History</a
+                    >Historial de Transacciones</a
                   >
-                  <a class="dropdown-item" href="setting.html">Settings</a>
+                  <a class="dropdown-item" href="setting.html"
+                    >Configuraciones</a
+                  >
                 </div>
               </li>
               <li class="nav-item dropdown">
@@ -142,7 +144,7 @@
                 <div class="dropdown-menu shopping-cart">
                   <ul>
                     <li>
-                      <div class="drop-title">Your Cart</div>
+                      <div class="drop-title">Tu Carrito</div>
                     </li>
                     <li>
                       <div class="shopping-cart-list">
@@ -153,14 +155,14 @@
                             width="60"
                           />
                           <div class="media-body">
-                            <h5><a href="javascript:void(0)">Carrot</a></h5>
+                            <h5><a href="javascript:void(0)">Zanahoria</a></h5>
                             <p class="price">
                               <span class="discount text-muted"
                                 >Rp. 700.000</span
                               >
                               <span>Rp. 100.000</span>
                             </p>
-                            <p class="text-muted">Qty: 1</p>
+                            <p class="text-muted">Cantidad: 1</p>
                           </div>
                         </div>
                         <div class="media">
@@ -170,14 +172,14 @@
                             width="60"
                           />
                           <div class="media-body">
-                            <h5><a href="javascript:void(0)">Carrot</a></h5>
+                            <h5><a href="javascript:void(0)">Zanahoria</a></h5>
                             <p class="price">
                               <span class="discount text-muted"
                                 >Rp. 700.000</span
                               >
                               <span>Rp. 100.000</span>
                             </p>
-                            <p class="text-muted">Qty: 1</p>
+                            <p class="text-muted">Cantidad: 1</p>
                           </div>
                         </div>
                         <div class="media">
@@ -187,14 +189,14 @@
                             width="60"
                           />
                           <div class="media-body">
-                            <h5><a href="javascript:void(0)">Carrot</a></h5>
+                            <h5><a href="javascript:void(0)">Zanahoria</a></h5>
                             <p class="price">
                               <span class="discount text-muted"
                                 >Rp. 700.000</span
                               >
                               <span>Rp. 100.000</span>
                             </p>
-                            <p class="text-muted">Qty: 1</p>
+                            <p class="text-muted">Cantidad: 1</p>
                           </div>
                         </div>
                         <div class="media">
@@ -204,14 +206,14 @@
                             width="60"
                           />
                           <div class="media-body">
-                            <h5><a href="javascript:void(0)">Carrot</a></h5>
+                            <h5><a href="javascript:void(0)">Zanahoria</a></h5>
                             <p class="price">
                               <span class="discount text-muted"
                                 >Rp. 700.000</span
                               >
                               <span>Rp. 100.000</span>
                             </p>
-                            <p class="text-muted">Qty: 1</p>
+                            <p class="text-muted">Cantidad: 1</p>
                           </div>
                         </div>
                       </div>
@@ -225,10 +227,10 @@
                       </div>
                     </li>
                     <li class="d-flex justify-content-between pl-3 pr-3 pt-3">
-                      <a href="cart.html" class="btn btn-default">View Cart</a>
-                      <a href="checkout.html" class="btn btn-primary"
-                        >Checkout</a
+                      <a href="cart.html" class="btn btn-default"
+                        >Ver Carrito</a
                       >
+                      <a href="checkout.html" class="btn btn-primary">Pagar</a>
                     </li>
                   </ul>
                 </div>
@@ -245,11 +247,15 @@
           style="background-image: url('assets/img/bg-header.jpg')"
         >
           <div class="container">
-            <h1 class="pt-5">Your Transactions</h1>
-            <p class="lead">Save time and leave the groceries to us.</p>
+            <h1 class="pt-5">Tus Transacciones</h1>
+            <p class="lead">
+              Ahorra tiempo y déjanos a nosotros los abarrotes.
+            </p>
           </div>
         </div>
       </div>
+
+      <!--1-->
 
       <section id="cart">
         <div class="container">
@@ -260,10 +266,10 @@
                   <thead>
                     <tr>
                       <th width="5%"></th>
-                      <th>Invoice</th>
-                      <th>Date</th>
+                      <th>Factura</th>
+                      <th>Fecha</th>
                       <th>Total</th>
-                      <th>Status</th>
+                      <th>Estado</th>
                       <th></th>
                     </tr>
                   </thead>
@@ -273,7 +279,7 @@
                       <td>AL121N8H2XQB47</td>
                       <td>12-12-2017</td>
                       <td>Rp 200.000</td>
-                      <td>Delivered</td>
+                      <td>Entregado</td>
                       <td>
                         <button
                           type="button"
@@ -281,24 +287,24 @@
                           data-toggle="modal"
                           data-target="#detailModal"
                         >
-                          Detail
+                          Detalle
                         </button>
                       </td>
                     </tr>
                   </tbody>
                 </table>
               </div>
-
-              <nav aria-label="Page navigation">
+      
+              <nav aria-label="Navegación de página">
                 <ul class="pagination justify-content-center">
                   <li class="page-item">
-                    <a class="page-link" href="#">Previous</a>
+                    <a class="page-link" href="#">Anterior</a>
                   </li>
                   <li class="page-item"><a class="page-link" href="#">1</a></li>
                   <li class="page-item"><a class="page-link" href="#">2</a></li>
                   <li class="page-item"><a class="page-link" href="#">3</a></li>
                   <li class="page-item">
-                    <a class="page-link" href="#">Next</a>
+                    <a class="page-link" href="#">Siguiente</a>
                   </li>
                 </ul>
               </nav>
@@ -306,7 +312,7 @@
           </div>
         </div>
       </section>
-
+      
       <!-- Modal -->
       <div
         class="modal fade"
@@ -320,13 +326,13 @@
           <div class="modal-content">
             <div class="modal-header">
               <h5 class="modal-title" id="exampleModalLabel">
-                No. Pesanan : AL121N8H2XQB47
+                No. de Pedido: AL121N8H2XQB47
               </h5>
               <button
                 type="button"
                 class="close"
                 data-dismiss="modal"
-                aria-label="Close"
+                aria-label="Cerrar"
               >
                 <span aria-hidden="true">&times;</span>
               </button>
@@ -335,7 +341,7 @@
               <div class="row">
                 <div class="col-md-6">
                   <p>
-                    <strong>Billing Detail:</strong><br />
+                    <strong>Detalles de Facturación:</strong><br />
                     Teguh Rianto<br />
                     Jl. Petani No. 159, Cibabat<br />
                     Cimahi Utara<br />
@@ -345,13 +351,13 @@
                 </div>
                 <div class="col-md-6">
                   <p>
-                    <strong>Payment Method:</strong><br />
-                    Direct Transfer to<br />
-                    Bank: BCA<br />
-                    No Rek.: 72133236179
+                    <strong>Método de Pago:</strong><br />
+                    Transferencia Directa a<br />
+                    Banco: BCA<br />
+                    No de Cuenta: 72133236179
                   </p>
                   <p>
-                    <strong>Batas Pembayaran</strong><br />
+                    <strong>Fecha Límite de Pago</strong><br />
                     14-12-2017 17:55 GMT+7
                   </p>
                 </div>
@@ -359,19 +365,19 @@
               <div class="row">
                 <div class="col-md-12">
                   <p>
-                    <strong>Your Order:</strong>
+                    <strong>Tu Pedido:</strong>
                   </p>
                   <div class="table-responsive">
                     <table class="table">
                       <thead>
                         <tr>
-                          <th>Products</th>
+                          <th>Productos</th>
                           <th class="text-right">Subtotal</th>
                         </tr>
                       </thead>
                       <tbody>
                         <tr>
-                          <td>Ikan Segar x1</td>
+                          <td>Pescado Fresco x1</td>
                           <td class="text-right">Rp 30.000</td>
                         </tr>
                         <tr>
@@ -379,32 +385,32 @@
                           <td class="text-right">Rp 120.000</td>
                         </tr>
                         <tr>
-                          <td>Mix Vegetables x1</td>
+                          <td>Verduras Mixtas x1</td>
                           <td class="text-right">Rp 30.000</td>
                         </tr>
                       </tbody>
-                      <tfooter>
+                      <tfoot>
                         <tr>
                           <td>
-                            <strong>Cart Subtotal</strong>
+                            <strong>Subtotal del Carrito</strong>
                           </td>
                           <td class="text-right">Rp 180.000</td>
                         </tr>
                         <tr>
                           <td>
-                            <strong>Shipping</strong>
+                            <strong>Envío</strong>
                           </td>
                           <td class="text-right">Rp 20.000</td>
                         </tr>
                         <tr>
                           <td>
-                            <strong>ORDER TOTAL</strong>
+                            <strong>TOTAL DEL PEDIDO</strong>
                           </td>
                           <td class="text-right">
                             <strong>Rp 200.000</strong>
                           </td>
                         </tr>
-                      </tfooter>
+                      </tfoot>
                     </table>
                   </div>
                 </div>
@@ -416,117 +422,84 @@
                 class="btn btn-default"
                 data-dismiss="modal"
               >
-                Close
+                Cerrar
               </button>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <footer>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-3">
-            <h5>About</h5>
-            <p>
-              Nisi esse dolor irure dolor eiusmod ex deserunt proident cillum eu
-              qui enim occaecat sunt aliqua anim eiusmod qui ut voluptate.
-            </p>
-          </div>
-          <div class="col-md-3">
-            <h5>Links</h5>
-            <ul>
-              <li>
-                <a href="about.html">About</a>
-              </li>
-              <li>
-                <a href="contact.html">Contact Us</a>
-              </li>
-              <li>
-                <a href="faq.html">FAQ</a>
-              </li>
-              <li>
-                <a href="javascript:void(0)">How it Works</a>
-              </li>
-              <li>
-                <a href="terms.html">Terms</a>
-              </li>
-              <li>
-                <a href="privacy.html">Privacy Policy</a>
-              </li>
-            </ul>
-          </div>
-          <div class="col-md-3">
-            <h5>Contact</h5>
-            <ul>
-              <li>
-                <a href="tel:+620892738334"
-                  ><i class="fa fa-phone"></i> 08272367238</a
-                >
-              </li>
-              <li>
-                <a href="mailto:hello@domain.com"
-                  ><i class="fa fa-envelope"></i> hello@domain.com</a
-                >
-              </li>
-            </ul>
-
-            <h5>Follow Us</h5>
-            <ul class="social">
-              <li>
-                <a href="javascript:void(0)" target="_blank"
-                  ><i class="fab fa-facebook-f"></i
-                ></a>
-              </li>
-              <li>
-                <a href="javascript:void(0)" target="_blank"
-                  ><i class="fab fa-instagram"></i
-                ></a>
-              </li>
-              <li>
-                <a href="javascript:void(0)" target="_blank"
-                  ><i class="fab fa-youtube"></i
-                ></a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <p class="copyright">
-        &copy; 2018 Freshcery | Groceries Organic Store. All rights reserved.
-      </p>
-    </footer>
-
-    <script type="text/javascript" src="assets/js/jquery.js"></script>
-    <script type="text/javascript" src="assets/js/jquery-migrate.js"></script>
-    <script
-      type="text/javascript"
-      src="assets/packages/bootstrap/libraries/popper.js"
-    ></script>
-    <script
-      type="text/javascript"
-      src="assets/packages/bootstrap/bootstrap.js"
-    ></script>
-    <script
-      type="text/javascript"
-      src="assets/packages/o2system-ui/o2system-ui.js"
-    ></script>
-    <script
-      type="text/javascript"
-      src="assets/packages/owl-carousel/owl-carousel.js"
-    ></script>
-    <script
-      type="text/javascript"
-      src="assets/packages/cloudzoom/cloudzoom.js"
-    ></script>
-    <script
-      type="text/javascript"
-      src="assets/packages/thumbelina/thumbelina.js"
-    ></script>
-    <script
-      type="text/javascript"
-      src="assets/packages/bootstrap-touchspin/bootstrap-touchspin.js"
-    ></script>
-    <script type="text/javascript" src="assets/js/theme.js"></script>
-  </body>
-</html>
+      
+      <footer>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3">
+              <h5>Enlaces</h5>
+              <ul>
+                <li>
+                  <a href="about.html">Acerca de</a>
+                </li>
+                <li>
+                  <a href="contact.html">Contáctanos</a>
+                </li>
+                <li>
+                  <a href="faq.html">Preguntas Frecuentes</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-3">
+      
+              <h5>Contacto</h5>
+              <ul>
+                <li>
+                  <a href="tel:+620892738334"
+                    ><i class="fa fa-phone"></i> 08272367238</a
+                  >
+                </li>
+                <li>
+                  <a href="mailto:hola@tienda.com"
+                    ><i class="fa fa-envelope"></i> hola@tienda.com</a
+                  >
+                </li>
+              </ul>
+              </div>
+              </div>
+              </div>
+              <p class="copyright">
+                &copy; Tienda de Productos Orgánicos. Todos los derechos reservados.
+              </p>
+              </footer>
+              
+              <script type="text/javascript" src="assets/js/jquery.js"></script>
+              <script type="text/javascript" src="assets/js/jquery-migrate.js"></script>
+              <script
+                type="text/javascript"
+                src="assets/packages/bootstrap/libraries/popper.js"
+              ></script>
+              <script
+                type="text/javascript"
+                src="assets/packages/bootstrap/bootstrap.js"
+              ></script>
+              <script
+                type="text/javascript"
+                src="assets/packages/o2system-ui/o2system-ui.js"
+              ></script>
+              <script
+                type="text/javascript"
+                src="assets/packages/owl-carousel/owl-carousel.js"
+              ></script>
+              <script
+                type="text/javascript"
+                src="assets/packages/cloudzoom/cloudzoom.js"
+              ></script>
+              <script
+                type="text/javascript"
+                src="assets/packages/thumbelina/thumbelina.js"
+              ></script>
+              <script
+                type="text/javascript"
+                src="assets/packages/bootstrap-touchspin/bootstrap-touchspin.js"
+              ></script>
+              <script type="text/javascript" src="assets/js/theme.js"></script>
+              </body>
+              </html>
+              

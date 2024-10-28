@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Freshcery | Groceries Organic Store</title>
+    <title>Tienda Orgánica | Registro</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
@@ -76,6 +76,10 @@
         id="page-navigation"
       >
         <div class="container">
+           <!-- Navbar Brand -->
+           <a class="navbar-brand">
+            <img src="assets/img/logo/logo.jpeg" alt="Logo" />
+          </a>
           <!-- Toggle Button -->
           <button
             class="navbar-toggler"
@@ -89,77 +93,147 @@
             <span class="navbar-toggler-icon"></span>
           </button>
 
-          <div
-            class="collapse navbar-collapse"
-            id="navbarcollapse"
-            style="display: block"
-          >
+          <div class="collapse navbar-collapse" id="navbarcollapse">
             <!-- Navbar Menu -->
             <ul class="navbar-nav ml-auto">
-              <li class="nav-item" id="register">
-                <a href="register.html" class="nav-link">Register</a>
-              </li>
-              <li class="nav-item" id="login">
-                <a href="login.html" class="nav-link">Login</a>
-                <script src="usuarioLogin.js"></script>
+              <li class="nav-item">
+                <a href="shop.html" class="nav-link">Tienda</a>
               </li>
               <li class="nav-item">
-                <a
-                  class="btn btn-primary btn-block text-uppercase"
-                  src="logout.js"
-                  id="salir"
-                  >Logout</a
-                >
+                <a href="register.html" class="nav-link">Registrar</a>
               </li>
-
-              <!-- Contenedor para el avatar y carrito -->
-              <div id="user-section" style="display: none">
-                <li class="nav-item dropdown">
-                  <a
-                    class="nav-link dropdown-toggle"
-                    href="javascript:void(0)"
-                    id="navbarDropdown"
-                    role="button"
-                    data-toggle="dropdown"
-                    aria-haspopup="true"
-                    aria-expanded="false"
-                  >
-                    <div class="avatar-header">
-                      <img src="assets/img/logo/avatar.jpg" />
-                    </div>
-                    John Doe
-                  </a>
-                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="transaction.html"
-                      >Transactions History</a
-                    >
-                    <a class="dropdown-item" href="setting.html">Settings</a>
+              <li class="nav-item">
+                <a href="login.html" class="nav-link">Iniciar Sesión</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="javascript:void(0)"
+                  id="navbarDropdown"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  <div class="avatar-header">
+                    <img src="assets/img/logo/avatar.jpg" />
                   </div>
-                </li>
-                <li class="nav-item dropdown">
-                  <a
-                    href="javascript:void(0)"
-                    class="nav-link dropdown-toggle"
-                    data-toggle="dropdown"
-                    aria-haspopup="true"
-                    aria-expanded="false"
+                  John Doe
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="transaction.html"
+                    >Historial de Transacciones</a
                   >
-                    <i class="fa fa-shopping-basket"></i>
-                    <span class="badge badge-primary">5</span>
-                  </a>
-                  <div class="dropdown-menu shopping-cart">
-                    <!-- Aquí va el contenido del carrito -->
-                    <ul>
-                      <li>
-                        <div class="drop-title">Your Cart</div>
-                      </li>
-                      <!-- Items del carrito -->
-                      <!-- ... -->
-                    </ul>
-                  </div>
-                </li>
-              </div>
+                  <a class="dropdown-item" href="setting.html">Configuración</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  href="javascript:void(0)"
+                  class="nav-link dropdown-toggle"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  <i class="fa fa-shopping-basket"></i>
+                  <span class="badge badge-primary">5</span>
+                </a>
+                <div class="dropdown-menu shopping-cart">
+                  <ul>
+                    <li>
+                      <div class="drop-title">Tu Carrito</div>
+                    </li>
+                    <li>
+                      <div class="shopping-cart-list">
+                        <div class="media">
+                          <img
+                            class="d-flex mr-3"
+                            src="assets/img/logo/avatar.jpg"
+                            width="60"
+                          />
+                          <div class="media-body">
+                            <h5><a href="javascript:void(0)">Zanahoria</a></h5>
+                            <p class="price">
+                              <span class="discount text-muted"
+                                >Rp. 700.000</span
+                              >
+                              <span>Rp. 100.000</span>
+                            </p>
+                            <p class="text-muted">Cantidad: 1</p>
+                          </div>
+                        </div>
+                        <div class="media">
+                          <img
+                            class="d-flex mr-3"
+                            src="assets/img/logo/avatar.jpg"
+                            width="60"
+                          />
+                          <div class="media-body">
+                            <h5><a href="javascript:void(0)">Zanahoria</a></h5>
+                            <p class="price">
+                              <span class="discount text-muted"
+                                >Rp. 700.000</span
+                              >
+                              <span>Rp. 100.000</span>
+                            </p>
+                            <p class="text-muted">Cantidad: 1</p>
+                          </div>
+                        </div>
+                        <div class="media">
+                          <img
+                            class="d-flex mr-3"
+                            src="assets/img/logo/avatar.jpg"
+                            width="60"
+                          />
+                          <div class="media-body">
+                            <h5><a href="javascript:void(0)">Zanahoria</a></h5>
+                            <p class="price">
+                              <span class="discount text-muted"
+                                >Rp. 700.000</span
+                              >
+                              <span>Rp. 100.000</span>
+                            </p>
+                            <p class="text-muted">Cantidad: 1</p>
+                          </div>
+                        </div>
+                        <div class="media">
+                          <img
+                            class="d-flex mr-3"
+                            src="assets/img/logo/avatar.jpg"
+                            width="60"
+                          />
+                          <div class="media-body">
+                            <h5><a href="javascript:void(0)">Zanahoria</a></h5>
+                            <p class="price">
+                              <span class="discount text-muted"
+                                >Rp. 700.000</span
+                              >
+                              <span>Rp. 100.000</span>
+                            </p>
+                            <p class="text-muted">Cantidad: 1</p>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="drop-title d-flex justify-content-between">
+                        <span>Total:</span>
+                        <span class="text-primary"
+                          ><strong>Rp. 2000.000</strong></span
+                        >
+                      </div>
+                    </li>
+                    <li class="d-flex justify-content-between pl-3 pr-3 pt-3">
+                      <a href="cart.html" class="btn btn-default">Ver Carrito</a>
+                      <a href="checkout.html" class="btn btn-primary"
+                        >Pagar</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </li>
             </ul>
+          </div>
           </div>
         </div>
       </nav>
@@ -171,18 +245,19 @@
           style="background-image: url('assets/img/bg-header.jpg')"
         >
           <div class="container">
-            <h1 class="pt-5">Shopping Page</h1>
-            <p class="lead">Save time and leave the groceries to us.</p>
+            <h1 class="pt-5">Página de Compras</h1>
+            <p class="lead">Ahorra tiempo y déjanos las compras a nosotros.</p>
           </div>
         </div>
       </div>
+ <!--carrusel-->
 
       <div class="container">
         <div class="row">
           <div class="col-md-12">
             <div class="shop-categories owl-carousel mt-5">
               <div class="item">
-                <a href="#vegetables">
+                <a href="#vegetales">
                   <div
                     class="media d-flex align-items-center justify-content-center"
                   >
@@ -190,14 +265,14 @@
                       ><i class="sb-bistro-carrot"></i
                     ></span>
                     <div class="media-body">
-                      <h5>Vegetables</h5>
-                      <p>Freshly Harvested Veggies From Local Growers</p>
+                      <h5>Verduras</h5>
+                      <p>Verduras frescas cosechadas por productores locales</p>
                     </div>
                   </div>
                 </a>
               </div>
               <div class="item">
-                <a href="#fruits">
+                <a href="#frutas">
                   <div
                     class="media d-flex align-items-center justify-content-center"
                   >
@@ -205,14 +280,14 @@
                       ><i class="sb-bistro-apple"></i
                     ></span>
                     <div class="media-body">
-                      <h5>Fruits</h5>
-                      <p>Variety of Fruits From Local Growers</p>
+                      <h5>Frutas</h5>
+                      <p>Variedad de frutas de productores locales</p>
                     </div>
                   </div>
                 </a>
               </div>
               <div class="item">
-                <a href="#meats">
+                <a href="#carnes">
                   <div
                     class="media d-flex align-items-center justify-content-center"
                   >
@@ -220,14 +295,14 @@
                       ><i class="sb-bistro-roast-leg"></i
                     ></span>
                     <div class="media-body">
-                      <h5>Meats</h5>
-                      <p>Protein Rich Ingridients From Local Farmers</p>
+                      <h5>Carnes</h5>
+                      <p>Ingredientes ricos en proteínas de granjas locales</p>
                     </div>
                   </div>
                 </a>
               </div>
               <div class="item">
-                <a href="#fishes">
+                <a href="#peces">
                   <div
                     class="media d-flex align-items-center justify-content-center"
                   >
@@ -235,14 +310,14 @@
                       ><i class="sb-bistro-fish-1"></i
                     ></span>
                     <div class="media-body">
-                      <h5>Fishes</h5>
-                      <p>Protein Rich Ingridients From Local Farmers</p>
+                      <h5>Pescados</h5>
+                      <p>Ingredientes ricos en proteínas de granjas locales</p>
                     </div>
                   </div>
                 </a>
               </div>
               <div class="item">
-                <a href="#frozen">
+                <a href="#congelados">
                   <div
                     class="media d-flex align-items-center justify-content-center"
                   >
@@ -250,14 +325,14 @@
                       ><i class="sb-bistro-french-fries"></i
                     ></span>
                     <div class="media-body">
-                      <h5>Frozen Foods</h5>
-                      <p>Protein Rich Ingridients From Local Farmers</p>
+                      <h5>Alimentos Congelados</h5>
+                      <p>Ingredientes ricos en proteínas de granjas locales</p>
                     </div>
                   </div>
                 </a>
               </div>
               <div class="item">
-                <a href="#packages">
+                <a href="#enlatados">
                   <div
                     class="media d-flex align-items-center justify-content-center"
                   >
@@ -265,8 +340,8 @@
                       ><i class="sb-bistro-appetizer"></i
                     ></span>
                     <div class="media-body">
-                      <h5>Packages</h5>
-                      <p>Protein Rich Ingridients From Local Farmers</p>
+                      <h5>Paquetes</h5>
+                      <p>Ingredientes ricos en proteínas de granjas locales</p>
                     </div>
                   </div>
                 </a>
@@ -276,183 +351,103 @@
         </div>
       </div>
 
-      <section id="frozen">
+
+
+      <!-- 1 -->
+
+    
+      <section id="congelados">
         <div class="container">
           <div class="row">
             <div class="col-md-12">
-              <h2 class="title">Frozen food</h2>
+              <h2 class="title">Alimentos Congelados</h2>
               <div class="product-carousel owl-carousel">
                 <div class="item">
                   <div class="card card-product">
-                    <div class="card-ribbon">
-                      <div class="card-ribbon-container right">
-                        <span class="ribbon ribbon-primary">SPECIAL</span>
-                      </div>
-                    </div>
                     <div class="card-badge">
-                      <div class="card-badge-container left">
-                        <span class="badge badge-default"> Until 2018 </span>
-                        <span class="badge badge-primary"> 20% OFF </span>
-                      </div>
-                      <img
-                        src="assets/img/meats.jpg"
-                        alt="Card image 2"
-                        class="card-img-top"
-                      />
+                      <img src="assets/img/meats.jpg" alt="Imagen de tarjeta 2" class="card-img-top" />
                     </div>
                     <div class="card-body">
                       <h4 class="card-title">
-                        <a href="detail-product.html">Product Title</a>
+                        <a href="detail-product.html">Título del Producto</a>
                       </h4>
                       <div class="card-price">
-                        <span class="discount">Rp. 300.000</span>
                         <span class="reguler">Rp. 200.000</span>
                       </div>
-                      <a
-                        href="detail-product.html"
-                        class="btn btn-block btn-primary"
-                      >
-                        Add to Cart
+                      <a href="detail-product.html" class="btn btn-block btn-primary">
+                        Añadir al Carrito
                       </a>
                     </div>
                   </div>
                 </div>
                 <div class="item">
                   <div class="card card-product">
-                    <div class="card-ribbon">
-                      <div class="card-ribbon-container right">
-                        <span class="ribbon ribbon-primary">SPECIAL</span>
-                      </div>
-                    </div>
                     <div class="card-badge">
-                      <div class="card-badge-container left">
-                        <span class="badge badge-default"> Until 2018 </span>
-                        <span class="badge badge-primary"> 20% OFF </span>
-                      </div>
-                      <img
-                        src="assets/img/fish.jpg"
-                        alt="Card image 2"
-                        class="card-img-top"
-                      />
+                      <img src="assets/img/fish.jpg" alt="Imagen de tarjeta 2" class="card-img-top" />
                     </div>
                     <div class="card-body">
                       <h4 class="card-title">
-                        <a href="detail-product.html">Product Title</a>
+                        <a href="detail-product.html">Título del Producto</a>
                       </h4>
                       <div class="card-price">
-                        <span class="discount">Rp. 300.000</span>
                         <span class="reguler">Rp. 200.000</span>
                       </div>
-                      <a
-                        href="detail-product.html"
-                        class="btn btn-block btn-primary"
-                      >
-                        Add to Cart
+                      <a href="detail-product.html" class="btn btn-block btn-primary">
+                        Añadir al Carrito
                       </a>
                     </div>
                   </div>
                 </div>
                 <div class="item">
                   <div class="card card-product">
-                    <div class="card-ribbon">
-                      <div class="card-ribbon-container right">
-                        <span class="ribbon ribbon-primary">SPECIAL</span>
-                      </div>
-                    </div>
                     <div class="card-badge">
-                      <div class="card-badge-container left">
-                        <span class="badge badge-default"> Until 2018 </span>
-                        <span class="badge badge-primary"> 20% OFF </span>
-                      </div>
-                      <img
-                        src="assets/img/vegetables.jpg"
-                        alt="Card image 2"
-                        class="card-img-top"
-                      />
+                      <img src="assets/img/vegetables.jpg" alt="Imagen de tarjeta 2" class="card-img-top" />
                     </div>
                     <div class="card-body">
                       <h4 class="card-title">
-                        <a href="detail-product.html">Product Title</a>
+                        <a href="detail-product.html">Título del Producto</a>
                       </h4>
                       <div class="card-price">
-                        <span class="discount">Rp. 300.000</span>
                         <span class="reguler">Rp. 200.000</span>
                       </div>
-                      <a
-                        href="detail-product.html"
-                        class="btn btn-block btn-primary"
-                      >
-                        Add to Cart
+                      <a href="detail-product.html" class="btn btn-block btn-primary">
+                        Añadir al Carrito
                       </a>
                     </div>
                   </div>
                 </div>
                 <div class="item">
                   <div class="card card-product">
-                    <div class="card-ribbon">
-                      <div class="card-ribbon-container right">
-                        <span class="ribbon ribbon-primary">SPECIAL</span>
-                      </div>
-                    </div>
                     <div class="card-badge">
-                      <div class="card-badge-container left">
-                        <span class="badge badge-default"> Until 2018 </span>
-                        <span class="badge badge-primary"> 20% OFF </span>
-                      </div>
-                      <img
-                        src="assets/img/frozen.jpg"
-                        alt="Card image 2"
-                        class="card-img-top"
-                      />
+                      <img src="assets/img/frozen.jpg" alt="Imagen de tarjeta 2" class="card-img-top" />
                     </div>
                     <div class="card-body">
                       <h4 class="card-title">
-                        <a href="detail-product.html">Product Title</a>
+                        <a href="detail-product.html">Título del Producto</a>
                       </h4>
                       <div class="card-price">
-                        <span class="discount">Rp. 300.000</span>
                         <span class="reguler">Rp. 200.000</span>
                       </div>
-                      <a
-                        href="detail-product.html"
-                        class="btn btn-block btn-primary"
-                      >
-                        Add to Cart
+                      <a href="detail-product.html" class="btn btn-block btn-primary">
+                        Añadir al Carrito
                       </a>
                     </div>
                   </div>
                 </div>
                 <div class="item">
                   <div class="card card-product">
-                    <div class="card-ribbon">
-                      <div class="card-ribbon-container right">
-                        <span class="ribbon ribbon-primary">SPECIAL</span>
-                      </div>
-                    </div>
                     <div class="card-badge">
-                      <div class="card-badge-container left">
-                        <span class="badge badge-default"> Until 2018 </span>
-                        <span class="badge badge-primary"> 20% OFF </span>
-                      </div>
-                      <img
-                        src="assets/img/fruits.jpg"
-                        alt="Card image 2"
-                        class="card-img-top"
-                      />
+                      <img src="assets/img/fruits.jpg" alt="Imagen de tarjeta 2" class="card-img-top" />
                     </div>
                     <div class="card-body">
                       <h4 class="card-title">
-                        <a href="detail-product.html">Product Title</a>
+                        <a href="detail-product.html">Título del Producto</a>
                       </h4>
                       <div class="card-price">
-                        <span class="discount">Rp. 300.000</span>
                         <span class="reguler">Rp. 200.000</span>
                       </div>
-                      <a
-                        href="detail-product.html"
-                        class="btn btn-block btn-primary"
-                      >
-                        Add to Cart
+                      <a href="detail-product.html" class="btn btn-block btn-primary">
+                        Añadir al Carrito
                       </a>
                     </div>
                   </div>
@@ -462,184 +457,99 @@
           </div>
         </div>
       </section>
-
-      <section id="packages">
+      
+      <section id="enlatados">
         <div class="container">
           <div class="row">
             <div class="col-md-12">
-              <h2 class="title">Packages</h2>
+              <h2 class="title">Paquetes</h2>
               <div class="product-carousel owl-carousel">
                 <div class="item">
                   <div class="card card-product">
-                    <div class="card-ribbon">
-                      <div class="card-ribbon-container right">
-                        <span class="ribbon ribbon-primary">SPECIAL</span>
-                      </div>
-                    </div>
                     <div class="card-badge">
-                      <div class="card-badge-container left">
-                        <span class="badge badge-default"> Until 2018 </span>
-                        <span class="badge badge-primary"> 20% OFF </span>
-                      </div>
-                      <img
-                        src="assets/img/meats.jpg"
-                        alt="Card image 2"
-                        class="card-img-top"
-                      />
+                      <img src="assets/img/meats.jpg" alt="Imagen de tarjeta 2" class="card-img-top" />
                     </div>
                     <div class="card-body">
                       <h4 class="card-title">
-                        <a href="detail-product.html">Product Title</a>
+                        <a href="detail-product.html">Título del Producto</a>
                       </h4>
                       <div class="card-price">
-                        <span class="discount">Rp. 300.000</span>
                         <span class="reguler">Rp. 200.000</span>
                       </div>
-                      <a
-                        href="detail-product.html"
-                        class="btn btn-block btn-primary"
-                      >
-                        Add to Cart
+                      <a href="detail-product.html" class="btn btn-block btn-primary">
+                        Añadir al Carrito
                       </a>
                     </div>
                   </div>
                 </div>
                 <div class="item">
                   <div class="card card-product">
-                    <div class="card-ribbon">
-                      <div class="card-ribbon-container right">
-                        <span class="ribbon ribbon-primary">SPECIAL</span>
-                      </div>
-                    </div>
                     <div class="card-badge">
-                      <div class="card-badge-container left">
-                        <span class="badge badge-default"> Until 2018 </span>
-                        <span class="badge badge-primary"> 20% OFF </span>
-                      </div>
-                      <img
-                        src="assets/img/fish.jpg"
-                        alt="Card image 2"
-                        class="card-img-top"
-                      />
+                      <img src="assets/img/fish.jpg" alt="Imagen de tarjeta 2" class="card-img-top" />
                     </div>
                     <div class="card-body">
                       <h4 class="card-title">
-                        <a href="detail-product.html">Product Title</a>
+                        <a href="detail-product.html">Título del Producto</a>
                       </h4>
                       <div class="card-price">
-                        <span class="discount">Rp. 300.000</span>
                         <span class="reguler">Rp. 200.000</span>
                       </div>
-                      <a
-                        href="detail-product.html"
-                        class="btn btn-block btn-primary"
-                      >
-                        Add to Cart
+                      <a href="detail-product.html" class="btn btn-block btn-primary">
+                        Añadir al Carrito
                       </a>
                     </div>
                   </div>
                 </div>
                 <div class="item">
                   <div class="card card-product">
-                    <div class="card-ribbon">
-                      <div class="card-ribbon-container right">
-                        <span class="ribbon ribbon-primary">SPECIAL</span>
-                      </div>
-                    </div>
                     <div class="card-badge">
-                      <div class="card-badge-container left">
-                        <span class="badge badge-default"> Until 2018 </span>
-                        <span class="badge badge-primary"> 20% OFF </span>
-                      </div>
-                      <img
-                        src="assets/img/vegetables.jpg"
-                        alt="Card image 2"
-                        class="card-img-top"
-                      />
+                      <img src="assets/img/vegetables.jpg" alt="Imagen de tarjeta 2" class="card-img-top" />
                     </div>
                     <div class="card-body">
                       <h4 class="card-title">
-                        <a href="detail-product.html">Product Title</a>
+                        <a href="detail-product.html">Título del Producto</a>
                       </h4>
                       <div class="card-price">
-                        <span class="discount">Rp. 300.000</span>
                         <span class="reguler">Rp. 200.000</span>
                       </div>
-                      <a
-                        href="detail-product.html"
-                        class="btn btn-block btn-primary"
-                      >
-                        Add to Cart
+                      <a href="detail-product.html" class="btn btn-block btn-primary">
+                        Añadir al Carrito
                       </a>
                     </div>
                   </div>
                 </div>
                 <div class="item">
                   <div class="card card-product">
-                    <div class="card-ribbon">
-                      <div class="card-ribbon-container right">
-                        <span class="ribbon ribbon-primary">SPECIAL</span>
-                      </div>
-                    </div>
                     <div class="card-badge">
-                      <div class="card-badge-container left">
-                        <span class="badge badge-default"> Until 2018 </span>
-                        <span class="badge badge-primary"> 20% OFF </span>
-                      </div>
-                      <img
-                        src="assets/img/frozen.jpg"
-                        alt="Card image 2"
-                        class="card-img-top"
-                      />
+                      <img src="assets/img/frozen.jpg" alt="Imagen de tarjeta 2" class="card-img-top" />
                     </div>
                     <div class="card-body">
                       <h4 class="card-title">
-                        <a href="detail-product.html">Product Title</a>
+                        <a href="detail-product.html">Título del Producto</a>
                       </h4>
                       <div class="card-price">
-                        <span class="discount">Rp. 300.000</span>
                         <span class="reguler">Rp. 200.000</span>
                       </div>
-                      <a
-                        href="detail-product.html"
-                        class="btn btn-block btn-primary"
-                      >
-                        Add to Cart
+                      <a href="detail-product.html" class="btn btn-block btn-primary">
+                        Añadir al Carrito
                       </a>
                     </div>
                   </div>
                 </div>
                 <div class="item">
                   <div class="card card-product">
-                    <div class="card-ribbon">
-                      <div class="card-ribbon-container right">
-                        <span class="ribbon ribbon-primary">SPECIAL</span>
-                      </div>
-                    </div>
                     <div class="card-badge">
-                      <div class="card-badge-container left">
-                        <span class="badge badge-default"> Until 2018 </span>
-                        <span class="badge badge-primary"> 20% OFF </span>
-                      </div>
-                      <img
-                        src="assets/img/fruits.jpg"
-                        alt="Card image 2"
-                        class="card-img-top"
-                      />
+                      <img src="assets/img/fruits.jpg" alt="Imagen de tarjeta 2" class="card-img-top" />
                     </div>
                     <div class="card-body">
                       <h4 class="card-title">
-                        <a href="detail-product.html">Product Title</a>
+                        <a href="detail-product.html">Título del Producto</a>
                       </h4>
                       <div class="card-price">
-                        <span class="discount">Rp. 300.000</span>
                         <span class="reguler">Rp. 200.000</span>
                       </div>
-                      <a
-                        href="detail-product.html"
-                        class="btn btn-block btn-primary"
-                      >
-                        Add to Cart
+                      <a href="detail-product.html" class="btn btn-block btn-primary">
+                        Añadir al Carrito
                       </a>
                     </div>
                   </div>
@@ -649,184 +559,144 @@
           </div>
         </div>
       </section>
+      
+  
 
-      <section id="vegetables" class="gray-bg">
+      <!--2-->
+
+
+      <section id="vegetales" class="gray-bg">
         <div class="container">
           <div class="row">
             <div class="col-md-12">
-              <h2 class="title">Vegetables</h2>
+              <h2 class="title">Vegetales</h2>
               <div class="product-carousel owl-carousel">
                 <div class="item">
                   <div class="card card-product">
-                    <div class="card-ribbon">
-                      <div class="card-ribbon-container right">
-                        <span class="ribbon ribbon-primary">SPECIAL</span>
-                      </div>
-                    </div>
                     <div class="card-badge">
-                      <div class="card-badge-container left">
-                        <span class="badge badge-default"> Until 2018 </span>
-                        <span class="badge badge-primary"> 20% OFF </span>
-                      </div>
+                      <div class="card-badge-container left"></div>
                       <img
                         src="assets/img/meats.jpg"
-                        alt="Card image 2"
+                        alt="Imagen de tarjeta 2"
                         class="card-img-top"
                       />
                     </div>
                     <div class="card-body">
                       <h4 class="card-title">
-                        <a href="detail-product.html">Product Title</a>
+                        <a href="detail-product.html">Título del Producto</a>
                       </h4>
                       <div class="card-price">
-                        <span class="discount">Rp. 300.000</span>
-                        <span class="reguler">Rp. 200.000</span>
+                        <span>Rp. 200.000</span>
                       </div>
                       <a
                         href="detail-product.html"
                         class="btn btn-block btn-primary"
                       >
-                        Add to Cart
+                        Añadir al Carrito
                       </a>
                     </div>
                   </div>
                 </div>
                 <div class="item">
                   <div class="card card-product">
-                    <div class="card-ribbon">
-                      <div class="card-ribbon-container right">
-                        <span class="ribbon ribbon-primary">SPECIAL</span>
-                      </div>
-                    </div>
                     <div class="card-badge">
-                      <div class="card-badge-container left">
-                        <span class="badge badge-default"> Until 2018 </span>
-                        <span class="badge badge-primary"> 20% OFF </span>
-                      </div>
+                      <div class="card-badge-container left"></div>
                       <img
                         src="assets/img/fish.jpg"
-                        alt="Card image 2"
+                        alt="Imagen de tarjeta 2"
                         class="card-img-top"
                       />
                     </div>
                     <div class="card-body">
                       <h4 class="card-title">
-                        <a href="detail-product.html">Product Title</a>
+                        <a href="detail-product.html">Título del Producto</a>
                       </h4>
                       <div class="card-price">
-                        <span class="discount">Rp. 300.000</span>
-                        <span class="reguler">Rp. 200.000</span>
+                        <span>Rp. 200.000</span>
                       </div>
                       <a
                         href="detail-product.html"
                         class="btn btn-block btn-primary"
                       >
-                        Add to Cart
+                        Añadir al Carrito
                       </a>
                     </div>
                   </div>
                 </div>
                 <div class="item">
                   <div class="card card-product">
-                    <div class="card-ribbon">
-                      <div class="card-ribbon-container right">
-                        <span class="ribbon ribbon-primary">SPECIAL</span>
-                      </div>
-                    </div>
                     <div class="card-badge">
-                      <div class="card-badge-container left">
-                        <span class="badge badge-default"> Until 2018 </span>
-                        <span class="badge badge-primary"> 20% OFF </span>
-                      </div>
+                      <div class="card-badge-container left"></div>
                       <img
                         src="assets/img/vegetables.jpg"
-                        alt="Card image 2"
+                        alt="Imagen de tarjeta 2"
                         class="card-img-top"
                       />
                     </div>
                     <div class="card-body">
                       <h4 class="card-title">
-                        <a href="detail-product.html">Product Title</a>
+                        <a href="detail-product.html">Título del Producto</a>
                       </h4>
                       <div class="card-price">
-                        <span class="discount">Rp. 300.000</span>
-                        <span class="reguler">Rp. 200.000</span>
+                        <span>Rp. 200.000</span>
                       </div>
                       <a
                         href="detail-product.html"
                         class="btn btn-block btn-primary"
                       >
-                        Add to Cart
+                        Añadir al Carrito
                       </a>
                     </div>
                   </div>
                 </div>
                 <div class="item">
                   <div class="card card-product">
-                    <div class="card-ribbon">
-                      <div class="card-ribbon-container right">
-                        <span class="ribbon ribbon-primary">SPECIAL</span>
-                      </div>
-                    </div>
                     <div class="card-badge">
-                      <div class="card-badge-container left">
-                        <span class="badge badge-default"> Until 2018 </span>
-                        <span class="badge badge-primary"> 20% OFF </span>
-                      </div>
+                      <div class="card-badge-container left"></div>
                       <img
                         src="assets/img/frozen.jpg"
-                        alt="Card image 2"
+                        alt="Imagen de tarjeta 2"
                         class="card-img-top"
                       />
                     </div>
                     <div class="card-body">
                       <h4 class="card-title">
-                        <a href="detail-product.html">Product Title</a>
+                        <a href="detail-product.html">Título del Producto</a>
                       </h4>
                       <div class="card-price">
-                        <span class="discount">Rp. 300.000</span>
-                        <span class="reguler">Rp. 200.000</span>
+                        <span>Rp. 200.000</span>
                       </div>
                       <a
                         href="detail-product.html"
                         class="btn btn-block btn-primary"
                       >
-                        Add to Cart
+                        Añadir al Carrito
                       </a>
                     </div>
                   </div>
                 </div>
                 <div class="item">
                   <div class="card card-product">
-                    <div class="card-ribbon">
-                      <div class="card-ribbon-container right">
-                        <span class="ribbon ribbon-primary">SPECIAL</span>
-                      </div>
-                    </div>
                     <div class="card-badge">
-                      <div class="card-badge-container left">
-                        <span class="badge badge-default"> Until 2018 </span>
-                        <span class="badge badge-primary"> 20% OFF </span>
-                      </div>
+                      <div class="card-badge-container left"></div>
                       <img
                         src="assets/img/fruits.jpg"
-                        alt="Card image 2"
+                        alt="Imagen de tarjeta 2"
                         class="card-img-top"
                       />
                     </div>
                     <div class="card-body">
                       <h4 class="card-title">
-                        <a href="detail-product.html">Product Title</a>
+                        <a href="detail-product.html">Título del Producto</a>
                       </h4>
                       <div class="card-price">
-                        <span class="discount">Rp. 300.000</span>
-                        <span class="reguler">Rp. 200.000</span>
+                        <span>Rp. 200.000</span>
                       </div>
                       <a
                         href="detail-product.html"
                         class="btn btn-block btn-primary"
                       >
-                        Add to Cart
+                        Añadir al Carrito
                       </a>
                     </div>
                   </div>
@@ -836,184 +706,139 @@
           </div>
         </div>
       </section>
-
-      <section id="meats">
+      
+      <section id="carnes">
         <div class="container">
           <div class="row">
             <div class="col-md-12">
-              <h2 class="title">Meats</h2>
+              <h2 class="title">Carnes</h2>
               <div class="product-carousel owl-carousel">
                 <div class="item">
                   <div class="card card-product">
-                    <div class="card-ribbon">
-                      <div class="card-ribbon-container right">
-                        <span class="ribbon ribbon-primary">SPECIAL</span>
-                      </div>
-                    </div>
                     <div class="card-badge">
-                      <div class="card-badge-container left">
-                        <span class="badge badge-default"> Until 2018 </span>
-                        <span class="badge badge-primary"> 20% OFF </span>
-                      </div>
+                      <div class="card-badge-container left"></div>
                       <img
                         src="assets/img/meats.jpg"
-                        alt="Card image 2"
+                        alt="Imagen de tarjeta 2"
                         class="card-img-top"
                       />
                     </div>
                     <div class="card-body">
                       <h4 class="card-title">
-                        <a href="detail-product.html">Product Title</a>
+                        <a href="detail-product.html">Título del Producto</a>
                       </h4>
                       <div class="card-price">
-                        <span class="discount">Rp. 300.000</span>
-                        <span class="reguler">Rp. 200.000</span>
+                        <span>Rp. 200.000</span>
                       </div>
                       <a
                         href="detail-product.html"
                         class="btn btn-block btn-primary"
                       >
-                        Add to Cart
+                        Añadir al Carrito
                       </a>
                     </div>
                   </div>
                 </div>
                 <div class="item">
                   <div class="card card-product">
-                    <div class="card-ribbon">
-                      <div class="card-ribbon-container right">
-                        <span class="ribbon ribbon-primary">SPECIAL</span>
-                      </div>
-                    </div>
                     <div class="card-badge">
-                      <div class="card-badge-container left">
-                        <span class="badge badge-default"> Until 2018 </span>
-                        <span class="badge badge-primary"> 20% OFF </span>
-                      </div>
+                      <div class="card-badge-container left"></div>
                       <img
                         src="assets/img/fish.jpg"
-                        alt="Card image 2"
+                        alt="Imagen de tarjeta 2"
                         class="card-img-top"
                       />
                     </div>
                     <div class="card-body">
                       <h4 class="card-title">
-                        <a href="detail-product.html">Product Title</a>
+                        <a href="detail-product.html">Título del Producto</a>
                       </h4>
                       <div class="card-price">
-                        <span class="discount">Rp. 300.000</span>
-                        <span class="reguler">Rp. 200.000</span>
+                        <span>Rp. 200.000</span>
                       </div>
                       <a
                         href="detail-product.html"
                         class="btn btn-block btn-primary"
                       >
-                        Add to Cart
+                        Añadir al Carrito
                       </a>
                     </div>
                   </div>
                 </div>
                 <div class="item">
                   <div class="card card-product">
-                    <div class="card-ribbon">
-                      <div class="card-ribbon-container right">
-                        <span class="ribbon ribbon-primary">SPECIAL</span>
-                      </div>
-                    </div>
                     <div class="card-badge">
-                      <div class="card-badge-container left">
-                        <span class="badge badge-default"> Until 2018 </span>
-                        <span class="badge badge-primary"> 20% OFF </span>
-                      </div>
+                      <div class="card-badge-container left"></div>
                       <img
                         src="assets/img/vegetables.jpg"
-                        alt="Card image 2"
+                        alt="Imagen de tarjeta 2"
                         class="card-img-top"
                       />
                     </div>
                     <div class="card-body">
                       <h4 class="card-title">
-                        <a href="detail-product.html">Product Title</a>
+                        <a href="detail-product.html">Título del Producto</a>
                       </h4>
                       <div class="card-price">
-                        <span class="discount">Rp. 300.000</span>
-                        <span class="reguler">Rp. 200.000</span>
+                        <span>Rp. 200.000</span>
                       </div>
                       <a
                         href="detail-product.html"
                         class="btn btn-block btn-primary"
                       >
-                        Add to Cart
+                        Añadir al Carrito
                       </a>
                     </div>
                   </div>
                 </div>
                 <div class="item">
                   <div class="card card-product">
-                    <div class="card-ribbon">
-                      <div class="card-ribbon-container right">
-                        <span class="ribbon ribbon-primary">SPECIAL</span>
-                      </div>
-                    </div>
                     <div class="card-badge">
-                      <div class="card-badge-container left">
-                        <span class="badge badge-default"> Until 2018 </span>
-                        <span class="badge badge-primary"> 20% OFF </span>
-                      </div>
+                      <div class="card-badge-container left"></div>
                       <img
                         src="assets/img/frozen.jpg"
-                        alt="Card image 2"
+                        alt="Imagen de tarjeta 2"
                         class="card-img-top"
                       />
                     </div>
                     <div class="card-body">
                       <h4 class="card-title">
-                        <a href="detail-product.html">Product Title</a>
+                        <a href="detail-product.html">Título del Producto</a>
                       </h4>
                       <div class="card-price">
-                        <span class="discount">Rp. 300.000</span>
-                        <span class="reguler">Rp. 200.000</span>
+                        <span>Rp. 200.000</span>
                       </div>
                       <a
                         href="detail-product.html"
                         class="btn btn-block btn-primary"
                       >
-                        Add to Cart
+                        Añadir al Carrito
                       </a>
                     </div>
                   </div>
                 </div>
                 <div class="item">
                   <div class="card card-product">
-                    <div class="card-ribbon">
-                      <div class="card-ribbon-container right">
-                        <span class="ribbon ribbon-primary">SPECIAL</span>
-                      </div>
-                    </div>
                     <div class="card-badge">
-                      <div class="card-badge-container left">
-                        <span class="badge badge-default"> Until 2018 </span>
-                        <span class="badge badge-primary"> 20% OFF </span>
-                      </div>
+                      <div class="card-badge-container left"></div>
                       <img
                         src="assets/img/fruits.jpg"
-                        alt="Card image 2"
+                        alt="Imagen de tarjeta 2"
                         class="card-img-top"
                       />
                     </div>
                     <div class="card-body">
                       <h4 class="card-title">
-                        <a href="detail-product.html">Product Title</a>
+                        <a href="detail-product.html">Título del Producto</a>
                       </h4>
                       <div class="card-price">
-                        <span class="discount">Rp. 300.000</span>
-                        <span class="reguler">Rp. 200.000</span>
+                        <span>Rp. 200.000</span>
                       </div>
                       <a
                         href="detail-product.html"
                         class="btn btn-block btn-primary"
                       >
-                        Add to Cart
+                        Añadir al Carrito
                       </a>
                     </div>
                   </div>
@@ -1023,185 +848,92 @@
           </div>
         </div>
       </section>
+      
 
-      <section id="fishes" class="gray-bg">
+      <!-- 3 -->
+      <section id="peces" class="gray-bg">
         <div class="container">
           <div class="row">
             <div class="col-md-12">
-              <h2 class="title">Fishes</h2>
+              <h2 class="title">Peces</h2>
               <div class="product-carousel owl-carousel">
                 <div class="item">
                   <div class="card card-product">
-                    <div class="card-ribbon">
-                      <div class="card-ribbon-container right">
-                        <span class="ribbon ribbon-primary">SPECIAL</span>
-                      </div>
-                    </div>
                     <div class="card-badge">
-                      <div class="card-badge-container left">
-                        <span class="badge badge-default"> Until 2018 </span>
-                        <span class="badge badge-primary"> 20% OFF </span>
-                      </div>
-                      <img
-                        src="assets/img/meats.jpg"
-                        alt="Card image 2"
-                        class="card-img-top"
-                      />
+                      <img src="assets/img/meats.jpg" alt="Imagen de producto" class="card-img-top" />
                     </div>
                     <div class="card-body">
                       <h4 class="card-title">
-                        <a href="detail-product.html">Product Title</a>
+                        <a href="detail-product.html">Título del Producto</a>
                       </h4>
                       <div class="card-price">
-                        <span class="discount">Rp. 300.000</span>
                         <span class="reguler">Rp. 200.000</span>
                       </div>
-                      <a
-                        href="detail-product.html"
-                        class="btn btn-block btn-primary"
-                      >
-                        Add to Cart
-                      </a>
+                      <a href="detail-product.html" class="btn btn-block btn-primary">Agregar al Carrito</a>
                     </div>
                   </div>
                 </div>
                 <div class="item">
                   <div class="card card-product">
-                    <div class="card-ribbon">
-                      <div class="card-ribbon-container right">
-                        <span class="ribbon ribbon-primary">SPECIAL</span>
-                      </div>
-                    </div>
                     <div class="card-badge">
-                      <div class="card-badge-container left">
-                        <span class="badge badge-default"> Until 2018 </span>
-                        <span class="badge badge-primary"> 20% OFF </span>
-                      </div>
-                      <img
-                        src="assets/img/fish.jpg"
-                        alt="Card image 2"
-                        class="card-img-top"
-                      />
+                      <img src="assets/img/fish.jpg" alt="Imagen de producto" class="card-img-top" />
                     </div>
                     <div class="card-body">
                       <h4 class="card-title">
-                        <a href="detail-product.html">Product Title</a>
+                        <a href="detail-product.html">Título del Producto</a>
                       </h4>
                       <div class="card-price">
-                        <span class="discount">Rp. 300.000</span>
                         <span class="reguler">Rp. 200.000</span>
                       </div>
-                      <a
-                        href="detail-product.html"
-                        class="btn btn-block btn-primary"
-                      >
-                        Add to Cart
-                      </a>
+                      <a href="detail-product.html" class="btn btn-block btn-primary">Agregar al Carrito</a>
                     </div>
                   </div>
                 </div>
                 <div class="item">
                   <div class="card card-product">
-                    <div class="card-ribbon">
-                      <div class="card-ribbon-container right">
-                        <span class="ribbon ribbon-primary">SPECIAL</span>
-                      </div>
-                    </div>
                     <div class="card-badge">
-                      <div class="card-badge-container left">
-                        <span class="badge badge-default"> Until 2018 </span>
-                        <span class="badge badge-primary"> 20% OFF </span>
-                      </div>
-                      <img
-                        src="assets/img/vegetables.jpg"
-                        alt="Card image 2"
-                        class="card-img-top"
-                      />
+                      <img src="assets/img/vegetables.jpg" alt="Imagen de producto" class="card-img-top" />
                     </div>
                     <div class="card-body">
                       <h4 class="card-title">
-                        <a href="detail-product.html">Product Title</a>
+                        <a href="detail-product.html">Título del Producto</a>
                       </h4>
                       <div class="card-price">
-                        <span class="discount">Rp. 300.000</span>
                         <span class="reguler">Rp. 200.000</span>
                       </div>
-                      <a
-                        href="detail-product.html"
-                        class="btn btn-block btn-primary"
-                      >
-                        Add to Cart
-                      </a>
+                      <a href="detail-product.html" class="btn btn-block btn-primary">Agregar al Carrito</a>
                     </div>
                   </div>
                 </div>
                 <div class="item">
                   <div class="card card-product">
-                    <div class="card-ribbon">
-                      <div class="card-ribbon-container right">
-                        <span class="ribbon ribbon-primary">SPECIAL</span>
-                      </div>
-                    </div>
                     <div class="card-badge">
-                      <div class="card-badge-container left">
-                        <span class="badge badge-default"> Until 2018 </span>
-                        <span class="badge badge-primary"> 20% OFF </span>
-                      </div>
-                      <img
-                        src="assets/img/frozen.jpg"
-                        alt="Card image 2"
-                        class="card-img-top"
-                      />
+                      <img src="assets/img/frozen.jpg" alt="Imagen de producto" class="card-img-top" />
                     </div>
                     <div class="card-body">
                       <h4 class="card-title">
-                        <a href="detail-product.html">Product Title</a>
+                        <a href="detail-product.html">Título del Producto</a>
                       </h4>
                       <div class="card-price">
-                        <span class="discount">Rp. 300.000</span>
                         <span class="reguler">Rp. 200.000</span>
                       </div>
-                      <a
-                        href="detail-product.html"
-                        class="btn btn-block btn-primary"
-                      >
-                        Add to Cart
-                      </a>
+                      <a href="detail-product.html" class="btn btn-block btn-primary">Agregar al Carrito</a>
                     </div>
                   </div>
                 </div>
                 <div class="item">
                   <div class="card card-product">
-                    <div class="card-ribbon">
-                      <div class="card-ribbon-container right">
-                        <span class="ribbon ribbon-primary">SPECIAL</span>
-                      </div>
-                    </div>
                     <div class="card-badge">
-                      <div class="card-badge-container left">
-                        <span class="badge badge-default"> Until 2018 </span>
-                        <span class="badge badge-primary"> 20% OFF </span>
-                      </div>
-                      <img
-                        src="assets/img/fruits.jpg"
-                        alt="Card image 2"
-                        class="card-img-top"
-                      />
+                      <img src="assets/img/fruits.jpg" alt="Imagen de producto" class="card-img-top" />
                     </div>
                     <div class="card-body">
                       <h4 class="card-title">
-                        <a href="detail-product.html">Product Title</a>
+                        <a href="detail-product.html">Título del Producto</a>
                       </h4>
                       <div class="card-price">
-                        <span class="discount">Rp. 300.000</span>
                         <span class="reguler">Rp. 200.000</span>
                       </div>
-                      <a
-                        href="detail-product.html"
-                        class="btn btn-block btn-primary"
-                      >
-                        Add to Cart
-                      </a>
+                      <a href="detail-product.html" class="btn btn-block btn-primary">Agregar al Carrito</a>
                     </div>
                   </div>
                 </div>
@@ -1210,185 +942,90 @@
           </div>
         </div>
       </section>
-
-      <section id="fruits">
+      
+      <section id="frutas">
         <div class="container">
           <div class="row">
             <div class="col-md-12">
-              <h2 class="title">Fruits</h2>
+              <h2 class="title">Frutas</h2>
               <div class="product-carousel owl-carousel">
                 <div class="item">
                   <div class="card card-product">
-                    <div class="card-ribbon">
-                      <div class="card-ribbon-container right">
-                        <span class="ribbon ribbon-primary">SPECIAL</span>
-                      </div>
-                    </div>
                     <div class="card-badge">
-                      <div class="card-badge-container left">
-                        <span class="badge badge-default"> Until 2018 </span>
-                        <span class="badge badge-primary"> 20% OFF </span>
-                      </div>
-                      <img
-                        src="assets/img/meats.jpg"
-                        alt="Card image 2"
-                        class="card-img-top"
-                      />
+                      <img src="assets/img/meats.jpg" alt="Imagen de producto" class="card-img-top" />
                     </div>
                     <div class="card-body">
                       <h4 class="card-title">
-                        <a href="detail-product.html">Product Title</a>
+                        <a href="detail-product.html">Título del Producto</a>
                       </h4>
                       <div class="card-price">
-                        <span class="discount">Rp. 300.000</span>
                         <span class="reguler">Rp. 200.000</span>
                       </div>
-                      <a
-                        href="detail-product.html"
-                        class="btn btn-block btn-primary"
-                      >
-                        Add to Cart
-                      </a>
+                      <a href="detail-product.html" class="btn btn-block btn-primary">Agregar al Carrito</a>
                     </div>
                   </div>
                 </div>
                 <div class="item">
                   <div class="card card-product">
-                    <div class="card-ribbon">
-                      <div class="card-ribbon-container right">
-                        <span class="ribbon ribbon-primary">SPECIAL</span>
-                      </div>
-                    </div>
                     <div class="card-badge">
-                      <div class="card-badge-container left">
-                        <span class="badge badge-default"> Until 2018 </span>
-                        <span class="badge badge-primary"> 20% OFF </span>
-                      </div>
-                      <img
-                        src="assets/img/fish.jpg"
-                        alt="Card image 2"
-                        class="card-img-top"
-                      />
+                      <img src="assets/img/fish.jpg" alt="Imagen de producto" class="card-img-top" />
                     </div>
                     <div class="card-body">
                       <h4 class="card-title">
-                        <a href="detail-product.html">Product Title</a>
+                        <a href="detail-product.html">Título del Producto</a>
                       </h4>
                       <div class="card-price">
-                        <span class="discount">Rp. 300.000</span>
                         <span class="reguler">Rp. 200.000</span>
                       </div>
-                      <a
-                        href="detail-product.html"
-                        class="btn btn-block btn-primary"
-                      >
-                        Add to Cart
-                      </a>
+                      <a href="detail-product.html" class="btn btn-block btn-primary">Agregar al Carrito</a>
                     </div>
                   </div>
                 </div>
                 <div class="item">
                   <div class="card card-product">
-                    <div class="card-ribbon">
-                      <div class="card-ribbon-container right">
-                        <span class="ribbon ribbon-primary">SPECIAL</span>
-                      </div>
-                    </div>
                     <div class="card-badge">
-                      <div class="card-badge-container left">
-                        <span class="badge badge-default"> Until 2018 </span>
-                        <span class="badge badge-primary"> 20% OFF </span>
-                      </div>
-                      <img
-                        src="assets/img/vegetables.jpg"
-                        alt="Card image 2"
-                        class="card-img-top"
-                      />
+                      <img src="assets/img/vegetables.jpg" alt="Imagen de producto" class="card-img-top" />
                     </div>
                     <div class="card-body">
                       <h4 class="card-title">
-                        <a href="detail-product.html">Product Title</a>
+                        <a href="detail-product.html">Título del Producto</a>
                       </h4>
                       <div class="card-price">
-                        <span class="discount">Rp. 300.000</span>
                         <span class="reguler">Rp. 200.000</span>
                       </div>
-                      <a
-                        href="detail-product.html"
-                        class="btn btn-block btn-primary"
-                      >
-                        Add to Cart
-                      </a>
+                      <a href="detail-product.html" class="btn btn-block btn-primary">Agregar al Carrito</a>
                     </div>
                   </div>
                 </div>
                 <div class="item">
                   <div class="card card-product">
-                    <div class="card-ribbon">
-                      <div class="card-ribbon-container right">
-                        <span class="ribbon ribbon-primary">SPECIAL</span>
-                      </div>
-                    </div>
                     <div class="card-badge">
-                      <div class="card-badge-container left">
-                        <span class="badge badge-default"> Until 2018 </span>
-                        <span class="badge badge-primary"> 20% OFF </span>
-                      </div>
-                      <img
-                        src="assets/img/frozen.jpg"
-                        alt="Card image 2"
-                        class="card-img-top"
-                      />
+                      <img src="assets/img/frozen.jpg" alt="Imagen de producto" class="card-img-top" />
                     </div>
                     <div class="card-body">
                       <h4 class="card-title">
-                        <a href="detail-product.html">Product Title</a>
+                        <a href="detail-product.html">Título del Producto</a>
                       </h4>
                       <div class="card-price">
-                        <span class="discount">Rp. 300.000</span>
                         <span class="reguler">Rp. 200.000</span>
                       </div>
-                      <a
-                        href="detail-product.html"
-                        class="btn btn-block btn-primary"
-                      >
-                        Add to Cart
-                      </a>
+                      <a href="detail-product.html" class="btn btn-block btn-primary">Agregar al Carrito</a>
                     </div>
                   </div>
                 </div>
                 <div class="item">
                   <div class="card card-product">
-                    <div class="card-ribbon">
-                      <div class="card-ribbon-container right">
-                        <span class="ribbon ribbon-primary">SPECIAL</span>
-                      </div>
-                    </div>
                     <div class="card-badge">
-                      <div class="card-badge-container left">
-                        <span class="badge badge-default"> Until 2018 </span>
-                        <span class="badge badge-primary"> 20% OFF </span>
-                      </div>
-                      <img
-                        src="assets/img/fruits.jpg"
-                        alt="Card image 2"
-                        class="card-img-top"
-                      />
+                      <img src="assets/img/fruits.jpg" alt="Imagen de producto" class="card-img-top" />
                     </div>
                     <div class="card-body">
                       <h4 class="card-title">
-                        <a href="detail-product.html">Product Title</a>
+                        <a href="detail-product.html">Título del Producto</a>
                       </h4>
                       <div class="card-price">
-                        <span class="discount">Rp. 300.000</span>
                         <span class="reguler">Rp. 200.000</span>
                       </div>
-                      <a
-                        href="detail-product.html"
-                        class="btn btn-block btn-primary"
-                      >
-                        Add to Cart
-                      </a>
+                      <a href="detail-product.html" class="btn btn-block btn-primary">Agregar al Carrito</a>
                     </div>
                   </div>
                 </div>
@@ -1398,34 +1035,27 @@
         </div>
       </section>
     </div>
+    <!--4 -->
+
     <footer>
       <div class="container">
         <div class="row">
           <div class="col-md-3">
-            <h5>Links</h5>
+            <h5>Enlaces</h5>
             <ul>
               <li>
-                <a href="about.html">About</a>
+                <a href="about.html">Acerca de</a>
               </li>
               <li>
-                <a href="contact.html">Contact Us</a>
+                <a href="contact.html">Contáctenos</a>
               </li>
               <li>
-                <a href="faq.html">FAQ</a>
-              </li>
-              <li>
-                <a href="javascript:void(0)">How it Works</a>
-              </li>
-              <li>
-                <a href="terms.html">Terms</a>
-              </li>
-              <li>
-                <a href="privacy.html">Privacy Policy</a>
+                <a href="faq.html">Preguntas Frecuentes</a>
               </li>
             </ul>
           </div>
           <div class="col-md-3">
-            <h5>Contact</h5>
+            <h5>Contacto</h5>
             <ul>
               <li>
                 <a href="tel:+620892738334"
@@ -1438,8 +1068,8 @@
                 >
               </li>
             </ul>
-
-            <h5>Follow Us</h5>
+    
+            <h5>Síguenos</h5>
             <ul class="social">
               <li>
                 <a href="javascript:void(0)" target="_blank"
@@ -1461,10 +1091,10 @@
         </div>
       </div>
       <p class="copyright">
-        &copy; 2018 Freshcery | Groceries Organic Store. All rights reserved.
+        &copy; Tienda de Comestibles Orgánicos. Todos los derechos reservados.
       </p>
     </footer>
-
+    
     <script type="text/javascript" src="assets/js/jquery.js"></script>
     <script type="text/javascript" src="assets/js/jquery-migrate.js"></script>
     <script
@@ -1496,5 +1126,6 @@
       src="assets/packages/bootstrap-touchspin/bootstrap-touchspin.js"
     ></script>
     <script type="text/javascript" src="assets/js/theme.js"></script>
-  </body>
-</html>
+    </body>
+    </html>
+    

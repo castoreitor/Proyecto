@@ -6,11 +6,11 @@ const comprobar = () => {
   const inputPassword = document.getElementById("password").value;
 
   // Expresión regular para verificar que la contraseña sea exactamente de 4 caracteres
-  const passwordRegex = /^.{4}$/;
+  const passwordRegex = /^.{4,15}$/;
 
   // Verificar si la contraseña cumple con el formato
   if (!passwordRegex.test(inputPassword)) {
-    alert("La contraseña debe tener exactamente 4 caracteres.");
+    alert("La contraseña debe tener minimo 4 caracteres y maximo 15.");
     return; // Detiene la ejecución si la contraseña no es válida
   }
 
@@ -18,7 +18,7 @@ const comprobar = () => {
     "Correo_electronico": inputEmail,
     "contraseña": inputPassword,
   };
-  console.log(data);
+
   fetch(url + "login", {
     method: "POST",
     body: JSON.stringify(data),
@@ -28,10 +28,15 @@ const comprobar = () => {
   }).then((res) => {
     if (res.status == 400) {
       alert("Error comprobando - Usuario o contraseña errados");
+      console.log(data);
     } else {
       localStorage.setItem("userLoggedIn", "true");
       alert("Acceso con éxito");
-      location.href = "shop.html";
+      if (data.Correo_electronico === "usuario@supersu.com") {
+        location.href = "menuAdmin.html";
+      } else {
+        location.href = "shop.html";
+      }
     }
   });
 };

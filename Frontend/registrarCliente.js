@@ -20,7 +20,7 @@ const validarEmail = (email) => {
 
 // Función para validar la contraseña (mínimo 4 caracteres)
 const validarContraseña = (contraseña) => {
-  return contraseña.length >= 4; // Solo verificar longitud
+  return contraseña.length >= 4 && contraseña.length <= 15;
 };
 
 // Envia datos creados
@@ -53,7 +53,7 @@ const create = () => {
   }
 
   if (!validarContraseña(contraseña)) {
-    alert("La contraseña debe tener al menos 4 caracteres.");
+    alert("La contraseña debe tener minimo 4 caracteres y maximo 15.");
     return;
   }
 
