@@ -1,4 +1,4 @@
-const database = require("../model/database");
+const database = require("../model/db");
 
 const productoController = {
   getProducto: (req, res) => {
@@ -17,7 +17,7 @@ const productoController = {
   getProductoI: (req, res) => {
     const { ID_producto } = req.params;
 
-    console.log(codigo);
+    console.log(ID_producto);
 
     const query = "SELECT * FROM Producto WHERE ID_producto = ?";
 
@@ -52,7 +52,7 @@ const productoController = {
       query,
       [ID_producto, Nombre, Categoria, Descripcion, Precio_unitario, Stock],
       (err, rows) => {
-        //console.log(cod, name, cant, val);
+        console.log(cID_producto, Nombre, Categoria, Descripcion, Precio_unitario, Stock);
         if (err) {
           console.log(err);
           res.status(500).json({ "Error": "Error en el servidor" });
