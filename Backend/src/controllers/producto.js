@@ -52,7 +52,7 @@ const productoController = {
       query,
       [ID_producto, Nombre, Categoria, Descripcion, Precio_unitario, Stock],
       (err, rows) => {
-        console.log(cID_producto, Nombre, Categoria, Descripcion, Precio_unitario, Stock);
+        console.log(ID_producto, Nombre, Categoria, Descripcion, Precio_unitario, Stock);
         if (err) {
           console.log(err);
           res.status(500).json({ "Error": "Error en el servidor" });
@@ -74,7 +74,7 @@ const productoController = {
     } = req.body;
 
     const query =
-      "UPDATE Producto SET ID_producto = ?, Nombre = ?, Categoria = ?, Descripcion = ?, Precio_unitario = ?, Stock = ? WHERE id = ?";
+      "UPDATE Producto SET ID_producto = ?, Nombre = ?, Categoria = ?, Descripcion = ?, Precio_unitario = ?, Stock = ? WHERE ID_producto = ?";
 
     database.query(
       query,

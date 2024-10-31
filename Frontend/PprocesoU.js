@@ -1,12 +1,12 @@
-let url = "http://localhost:4077/";
+
 const busqueda = () => {
-  const inputId = document.getElementById("cod1").value;
+  const ID_producto = document.getElementById("ID_producto").value;
 
   const data = {
-    "cod1": inputId,
+    "ID_producto": ID_producto,
   };
 
-  fetch(url + "consultar2/" + inputId, {
+  fetch(url + "consultar2/" + ID_producto, {
     method: "GET",
     headers: {
       "Content-Type": "application/json",
@@ -26,12 +26,14 @@ const mostrarData = (data) => {
   let body = "";
   for (i = 0; i < data.length; i++) {
     body += `<tr>
-      <td>${data[i].id}</td>
-      <td>${data[i].nombrep}</td>
-      <td>${data[i].cantidad}</td>
-      <td>${data[i].valor}</td>
-      <td>
-        <button onclick="ponerData('${data[i].id}', '${data[i].nombrep}', '${data[i].cantidad}', '${data[i].valor}')">Editar?</button>
+      <td>${data[i].ID_producto}</td>
+      <td>${data[i].Nombre}</td>
+      <td>${data[i].Categoria}</td>
+      <td>${data[i].Descripcion}</td>
+      <td>${data[i].Precio_unitario}</td>
+      <td>${data[i].Stock}</td>
+      
+        <button onclick="ponerData('${data[i].ID_producto}', '${data[i].Nombre}', '${data[i].Categoria}', '${data[i].Descripcion}' , '${data[i].Precio_unitario}','${data[i].Stock}')">Editar?</button>
       </td>
      </tr>`;
   }

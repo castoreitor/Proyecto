@@ -1,13 +1,13 @@
 let url = "http://localhost:4077/";
 
-//Primera consulta de datos
+/*Primera consulta de datos
 fetch(url + "consultar", {
   method: "GET",
 })
   .then((response) => response.json())
   .then((data) => mostrarData(data))
   .catch((error) => console.log(error));
-
+*/
 //Concatena los datos a la tabla
 const mostrarData = (data) => {
   let i;
@@ -51,12 +51,12 @@ const createProducto = () => {
       } else {
         alert("Producto Creado");
 
-        fetch(url + "consultar", {
+       /* fetch(url + "consultar", {
           method: "GET",
         })
           .then((response) => response.json())
           .then((data) => mostrarData(data))
-          .catch((error) => console.log(error));
+          .catch((error) => console.log(error)); */
       }
     })
     .catch((err) => {
@@ -71,3 +71,9 @@ document
     event.preventDefault();
     createProducto();
   });
+
+
+  
+  // Proceso R 
+
+  
