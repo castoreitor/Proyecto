@@ -1,4 +1,4 @@
-let url = "http://localhost:4077/";
+
 
 const busqueda = () => {
   const inputId = document.getElementById("Id").value;

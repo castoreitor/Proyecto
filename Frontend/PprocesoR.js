@@ -1,15 +1,13 @@
-let url = "http://localhost:4077/";
-
 const busqueda = () => {
   const ID_producto = document.getElementById("ID_producto").value;
 
-  //console.log('Que carajos'+inputId)
+  console.log("Que carajos");
 
   const data = {
     "ID_producto": ID_producto,
   };
 
-  //console.log(inputId)
+  console.log(ID_producto);
 
   fetch(url + "consultar2/" + ID_producto, {
     method: "GET",
@@ -31,7 +29,7 @@ const mostrarData = (data) => {
   let body = "";
   for (i = 0; i < data.length; i++) {
     body += `<tr>
-      <td>${data[i].ID_producto}</td>
+       <td>${data[i].ID_producto}</td>
       <td>${data[i].Nombre}</td>
       <td>${data[i].Categoria}</td>
       <td>${data[i].Descripcion}</td>
@@ -44,7 +42,7 @@ const mostrarData = (data) => {
 
 //Corre al dar click consultar
 document
-  .getElementById("consultar")
+  .getElementById("consultaResultado")
   .addEventListener("click", function (event) {
     event.preventDefault();
     busqueda();
