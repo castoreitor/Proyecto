@@ -11,7 +11,7 @@ class routeCliente {
   config() {
     this.ruta.post("/login", clienteController.login);
     this.ruta.post("/crear", clienteController.createCliente);
-    this.ruta.get("/consultaResultado", productoController.getProducto);
+    this.ruta.get("/consultaProducto", productoController.getProducto);
     this.ruta.get("/consultar2/:ID_producto", productoController.getProductoI);
     this.ruta.post("/crearProducto", productoController.createProducto);
     this.ruta.delete("/borrar", productoController.deleteProducto);

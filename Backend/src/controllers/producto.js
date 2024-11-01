@@ -2,7 +2,7 @@ const database = require("../model/db");
 
 const productoController = {
   getProducto: (req, res) => {
-    const query = "SELECT * FROM Producto";
+    const query = "SELECT * FROM producto";
 
     database.query(query, (err, rows) => {
       if (err) {
@@ -19,7 +19,7 @@ const productoController = {
 
     console.log(ID_producto);
 
-    const query = "SELECT * FROM Producto WHERE ID_producto = ?";
+    const query = "SELECT * FROM producto WHERE ID_producto = ?";
 
     database.query(query, [ID_producto], (err, rows) => {
       if (err) {
@@ -46,13 +46,20 @@ const productoController = {
       Stock,
     } = req.body;
 
-    const query = "INSERT INTO Producto VALUES (?,?,?,?,?,?)";
+    const query = "INSERT INTO producto VALUES (?,?,?,?,?,?)";
 
     database.query(
       query,
       [ID_producto, Nombre, Categoria, Descripcion, Precio_unitario, Stock],
       (err, rows) => {
-        console.log(ID_producto, Nombre, Categoria, Descripcion, Precio_unitario, Stock);
+        console.log(
+          ID_producto,
+          Nombre,
+          Categoria,
+          Descripcion,
+          Precio_unitario,
+          Stock
+        );
         if (err) {
           console.log(err);
           res.status(500).json({ "Error": "Error en el servidor" });
@@ -74,7 +81,7 @@ const productoController = {
     } = req.body;
 
     const query =
-      "UPDATE Producto SET ID_producto = ?, Nombre = ?, Categoria = ?, Descripcion = ?, Precio_unitario = ?, Stock = ? WHERE ID_producto = ?";
+      "UPDATE producto SET ID_producto = ?, Nombre = ?, Categoria = ?, Descripcion = ?, Precio_unitario = ?, Stock = ? WHERE ID_producto = ?";
 
     database.query(
       query,
@@ -93,7 +100,7 @@ const productoController = {
   deleteProducto: (req, res) => {
     const { ID_producto } = req.body;
 
-    const query = "DELETE FROM Producto where ID_producto = ?";
+    const query = "DELETE FROM producto where ID_producto = ?";
 
     database.query(query, [ID_producto], (err, rows) => {
       if (err) {
