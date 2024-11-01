@@ -1,17 +1,17 @@
 let url = "http://localhost:4077/";
 
 const busqueda = () => {
-  const codigo = document.getElementById("cod").value;
+  const ID_producto = document.getElementById("ID_producto").value;
 
   //console.log('Que carajos'+inputId)
 
   const data = {
-    "codigo": codigo,
+    "ID_producto": ID_producto,
   };
 
   //console.log(inputId)
 
-  fetch(url + "consultar2/" + codigo, {
+  fetch(url + "consultar2/" + ID_producto, {
     method: "GET",
     headers: {
       "Content-Type": "application/json",
@@ -31,11 +31,13 @@ const mostrarData = (data) => {
   let body = "";
   for (i = 0; i < data.length; i++) {
     body += `<tr>
-      <td>${data[i].id}</td>
-      <td>${data[i].nombrep}</td>
-      <td>${data[i].cantidad}</td>
-      <td>${data[i].valor}</td>
-     </tr>`;
+      <td>${data[i].ID_producto}</td>
+      <td>${data[i].Nombre}</td>
+      <td>${data[i].Categoria}</td>
+      <td>${data[i].Descripcion}</td>
+      <td>${data[i].Precio_unitario}</td>
+      <td>${data[i].Stock}</td>
+      </tr>`;
   }
   document.getElementById("data").innerHTML = body;
 };

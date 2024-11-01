@@ -1,4 +1,4 @@
-const database = require("../model/database");
+const database = require("../model/db");
 
 const productoController = {
   getProducto: (req, res) => {
@@ -17,7 +17,7 @@ const productoController = {
   getProductoI: (req, res) => {
     const { ID_producto } = req.params;
 
-    console.log(codigo);
+    console.log(ID_producto);
 
     const query = "SELECT * FROM Producto WHERE ID_producto = ?";
 

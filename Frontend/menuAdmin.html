@@ -30,12 +30,8 @@
     </div>
     <div id="page-content" class="page-content">
       <div class="container mt-5">
-        <!-- Tabla de productos -->
         <h1 class="text-center mt-5">Lista de Productos</h1>
-        <table
-          class="table table-striped table-hover table-bordered"
-          id="productTable"
-        >
+        <table class="table table-striped table-hover table-bordered" id="form">
           <thead class="thead-dark">
             <tr>
               <th>ID Producto</th>
@@ -46,14 +42,11 @@
               <th>Categoría</th>
             </tr>
           </thead>
-          <tbody>
-            <!-- Las filas de productos se agregarán aquí a través del backend -->
-          </tbody>
+          <tbody id="data"></tbody>
         </table>
 
-        <!-- Formulario para el registro de productos -->
         <h2 class="text-center mt-5">Registro de Productos</h2>
-        <form id="productForm" action="tu_backend_endpoint.php" method="POST">
+        <form id="productForm" method="POST">
           <div class="form-row">
             <div class="form-group col-md-4">
               <label for="idProducto">ID Producto</label>
@@ -94,7 +87,7 @@
                 class="form-control"
                 id="Precio_unitario"
                 name="precio"
-                step="0.01"
+                step="1"
                 required
               />
             </div>
@@ -140,7 +133,7 @@
             </div>
             <div class="col-md-3">
               <button
-                type="submit"
+                type="button"
                 id="crearProducto"
                 class="btn btn-primary btn-block"
               >
@@ -156,14 +149,17 @@
                 Salir
               </button>
             </div>
+            <div class="col-md-3">
+              <button type="button" class="btn btn-warning btn-block">
+                Ver Inventario
+              </button>
+            </div>
           </div>
         </form>
 
-        <!-- Formulario para consultar productos -->
         <h2 class="text-center mt-5">Consultar Producto</h2>
         <form
-          id="consultarForm"
-          action="PprocesoC.js"
+          id="consultar"
           method="GET"
           class="mx-auto"
           style="max-width: 400px"
@@ -179,7 +175,11 @@
             />
           </div>
           <div class="form-group d-flex justify-content-between">
-            <button type="submit" class="btn btn-primary flex-fill mr-2">
+            <button
+              type="button"
+              id="consultar"
+              class="btn btn-primary flex-fill mr-2"
+            >
               Consultar
             </button>
             <button type="button" class="btn btn-danger flex-fill" id="borrar">
@@ -187,9 +187,7 @@
             </button>
           </div>
         </form>
-        <div id="consultaResultado" class="text-center">
-          <!-- Resultados de la consulta se mostrarán aquí a través del backend -->
-        </div>
+        <div id="consultaResultado" class="text-center"></div>
       </div>
     </div>
 
@@ -201,5 +199,7 @@
 
     <script src="assets/js/jquery.js"></script>
     <script src="assets/js/theme.js"></script>
+    <script scr="PprocesoC.js"></script>
+    <script scr="PprocesoR.js"></script>
   </body>
 </html>
