@@ -70,7 +70,7 @@ const productoController = {
     );
   },
 
-  updateProducto: (req, res) => {
+  /*updateProducto: (req, res) => {
     const {
       ID_producto,
       Nombre,
@@ -95,6 +95,35 @@ const productoController = {
         }
       }
     );
+  },
+  */
+
+  updateProducto: (req, res) => {
+    const {
+      ID_producto,
+      Nombre,
+      Categoria,
+      Descripcion,
+      Precio_unitario,
+      Stock,
+    } = req.body;
+
+    const query =
+      "UPDATE producto SET Nombre = ?, Categoria = ?, Descripcion = ?, Precio_unitario = ?, Stock = ? WHERE ID_producto = ?";
+
+    database.query(
+      query,
+      [Nombre, Categoria, Descripcion, Precio_unitario, Stock, ID_producto],
+      (err, rows) => {
+        if (err) {
+          console.log(err);
+          res.status(500).json({ "Error": "Error en el servidor" });
+        } else {
+          res.status(201).json({ "Exito": "Producto Actualizado" });
+        }
+      }
+    );
+    console.log(req.body);
   },
 
   deleteProducto: (req, res) => {

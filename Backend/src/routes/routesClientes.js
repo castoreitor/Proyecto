@@ -14,6 +14,7 @@ class routeCliente {
     this.ruta.get("/consultaProducto", productoController.getProducto);
     this.ruta.get("/consultar2/:ID_producto", productoController.getProductoI);
     this.ruta.post("/crearProducto", productoController.createProducto);
+    this.ruta.put("/editar", productoController.updateProducto);
     this.ruta.delete("/borrar", productoController.deleteProducto);
   }
 }
