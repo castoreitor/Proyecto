@@ -1,5 +1,3 @@
-
-
 const busqueda = () => {
   const inputId = document.getElementById("Id").value;
 
@@ -40,12 +38,12 @@ const mostrarData = (data) => {
 };
 
 //Elimina producto por id
-const deleteProducto = (id) => {
-  console.log(id);
+const deleteProducto = (ID_producto) => {
+  console.log(ID_producto);
 
   fetch(url + "borrar", {
     method: "DELETE",
-    body: JSON.stringify({ "Id": id }),
+    body: JSON.stringify({ "ID_producto": ID_producto }),
     headers: {
       "Content-Type": "application/json",
     },
