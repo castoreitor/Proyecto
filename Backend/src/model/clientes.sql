@@ -31,7 +31,7 @@ VALUES
 
 DROP TABLE IF EXISTS `Producto`;
 CREATE TABLE IF NOT EXISTS `Producto` (
-  `ID_Producto` INT PRIMARY KEY,
+  `ID_producto` INT PRIMARY KEY,
   `Nombre` VARCHAR(50) NOT NULL,
   `Categoria` VARCHAR(50) NOT NULL,
   `Descripcion` VARCHAR(255) NOT NULL,
@@ -40,7 +40,7 @@ CREATE TABLE IF NOT EXISTS `Producto` (
 );
 
 INSERT INTO `Producto` (
-    `ID_Producto`,
+    `ID_producto`,
     `Nombre`,
     `Categoria`,
     `Descripcion`,

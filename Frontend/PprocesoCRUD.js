@@ -81,9 +81,9 @@ const busqueda = () => {
   const data = {
     "ID": ID,
   };
-  console.log(data);
-  console.log(url + "consultar2/" + ID);
-
+  console.log(ID, "busqueda ID");
+  //console.log(url + "consultar2/" + ID);
+  console.log(data, "busqueda");
   fetch(url + "consultar2/" + ID, {
     method: "GET",
     headers: {
@@ -100,24 +100,24 @@ const busqueda = () => {
 };
 
 const mostrarProductos = (data) => {
-  let i;
   let body = "";
-  for (i = 0; i < data.length; i++) {
+  data.forEach((producto) => {
     body += `<tr>
-       <td>${data[i].ID_producto}</td>
-      <td>${data[i].Nombre}</td>
-      <td>${data[i].Categoria}</td>
-      <td>${data[i].Descripcion}</td>
-      <td>${data[i].Precio_unitario}</td>
-      <td>${data[i].Stock}</td>
+      <td>${producto.ID_producto}</td>
+      <td>${producto.Nombre}</td>
+      <td>${producto.Categoria}</td>
+      <td>${producto.Descripcion}</td>
+      <td>${producto.Precio_unitario}</td>
+      <td>${producto.Stock}</td>
       <td>
-        <button onclick="ponerData('${data[i].ID_producto}', '${data[i].Nombre}', '${data[i].Categoria}', '${data[i].Descripcion}', '${data[i].Precio_unitario}', '${data[i].Stock}')">Editar?</button>
+        <button onclick="ponerData('${producto.ID_producto}', '${producto.Nombre}', '${producto.Categoria}', '${producto.Descripcion}', '${producto.Precio_unitario}', '${producto.Stock}')">Editar</button>
       </td>
       <td>
-      <button onclick="deleteProducto(${data[i].ID_producto}', '${data[i].Nombre}', '${data[i].Categoria}', '${data[i].Descripcion}', '${data[i].Precio_unitario}', '${data[i].Stock})">Eliminar</button>
+        <button onclick="deleteProducto('${producto.ID_producto}')">Eliminar</button>
       </td>
       </tr>`;
-  }
+    console.log(producto.ID_producto, "ID_producto en mostrarProductos");
+  });
   document.getElementById("data").innerHTML = body;
 };
 //poner datos en el formulario
@@ -130,21 +130,14 @@ const ponerData = (
   Precio_unitario,
   Stock
 ) => {
-  const editID_producto = document.getElementById("ID_producto");
-  const editNombre = document.getElementById("Nombre");
-  const editCategoria = document.getElementById("Categoria");
-  const editDescripcion = document.getElementById("Descripcion");
-  const editPrecio_unitario = document.getElementById("Precio_unitario");
-  const editStock = document.getElementById("Stock");
+  document.getElementById("ID_producto").value = ID_producto;
+  document.getElementById("Nombre").value = Nombre;
+  document.getElementById("Categoria").value = Categoria;
+  document.getElementById("Descripcion").value = Descripcion;
+  document.getElementById("Precio_unitario").value = Precio_unitario;
+  document.getElementById("Stock").value = Stock;
 
-  editID_producto.value = ID_producto;
-  editNombre.value = Nombre;
-  editCategoria.value = Categoria;
-  editDescripcion.value = Descripcion;
-  editPrecio_unitario.value = Precio_unitario;
-  editStock.value = Stock;
-
-  console.log(editID_producto);
+  console.log(ID_producto); // UNDEFINED
 };
 
 //Corre al dar click consultar
@@ -174,20 +167,20 @@ document
 
 // seccion de editar
 const editar = () => {
-  const editID_producto = document.getElementById("ID_producto").value;
-  const editNombre = document.getElementById("Nombre").value;
-  const editCategoria = document.getElementById("Categoria").value;
-  const editDescripcion = document.getElementById("Descripcion").value;
-  const editPrecio_unitario = document.getElementById("Precio_unitario").value;
-  const editStock = document.getElementById("Stock").value;
+  const ID_producto = document.getElementById("ID_producto").value;
+  const Nombre = document.getElementById("Nombre").value;
+  const Categoria = document.getElementById("Categoria").value;
+  const Descripcion = document.getElementById("Descripcion").value;
+  const Precio_unitario = document.getElementById("Precio_unitario").value;
+  const Stock = document.getElementById("Stock").value;
 
   const dataedit = {
-    "ID_producto": editID_producto,
-    "Nombre": editNombre,
-    "Categoria": editCategoria,
-    "Descripcion": editDescripcion,
-    "Precio_unitario": editPrecio_unitario,
-    "Stock": editStock,
+    "ID_producto": ID_producto,
+    "Nombre": Nombre,
+    "Categoria": Categoria,
+    "Descripcion": Descripcion,
+    "Precio_unitario": Precio_unitario,
+    "Stock": Stock,
   };
 
   fetch(url + "editar", {
