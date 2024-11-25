@@ -11,6 +11,12 @@ const mostrarData = (data) => {
       <td>${producto.Descripcion}</td>
       <td>${producto.Precio_unitario}</td>
       <td>${producto.Stock}</td>
+      <td>
+       <button onclick="ponerData('${producto.ID_producto}', '${producto.Nombre}', '${producto.Categoria}', '${producto.Descripcion}', '${producto.Precio_unitario}', '${producto.Stock}')">Editar</button>
+      </td>
+      <td>
+        <button onclick="deleteProducto('${producto.ID_producto}')">Eliminar</button>
+      </td>
       </tr>`;
   });
   document.getElementById("data").innerHTML = body;
@@ -116,7 +122,6 @@ const mostrarProductos = (data) => {
         <button onclick="deleteProducto('${producto.ID_producto}')">Eliminar</button>
       </td>
       </tr>`;
-    console.log(producto.ID_producto, "ID_producto en mostrarProductos");
   });
   document.getElementById("data").innerHTML = body;
 };
