@@ -79,7 +79,7 @@ const create = () => {
         alert("Error interno - Usuario no creado");
       } else {
         alert("Usuario creado");
-        location.href = "login.html";
+        location.href = "../auth/login.html";
       }
     })
     .catch((err) => {

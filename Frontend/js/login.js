@@ -33,9 +33,9 @@ const comprobar = () => {
       localStorage.setItem("userLoggedIn", "true");
       alert("Acceso con éxito");
       if (data.Correo_electronico === "usuario@supersu.com") {
-        location.href = "menuAdmin.html";
+        location.href = "../admin/menuAdmin.html";
       } else {
-        location.href = "shop.html";
+        location.href = "../shop/shop.html";
       }
     }
   });

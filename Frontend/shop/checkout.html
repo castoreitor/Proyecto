@@ -15,12 +15,12 @@
       type="text/css"
     />
     <link
-      href="assets/fonts/sb-bistro/sb-bistro.css"
+      href="/Frontend/assets/fonts/sb-bistro/sb-bistro.css"
       rel="stylesheet"
       type="text/css"
     />
     <link
-      href="assets/fonts/font-awesome/font-awesome.css"
+      href="/Frontend/assets/fonts/font-awesome/font-awesome.css"
       rel="stylesheet"
       type="text/css"
     />
@@ -29,43 +29,43 @@
       rel="stylesheet"
       type="text/css"
       media="all"
-      href="assets/packages/bootstrap/bootstrap.css"
+      href="/Frontend/assets/packages/bootstrap/bootstrap.css"
     />
     <link
       rel="stylesheet"
       type="text/css"
       media="all"
-      href="assets/packages/o2system-ui/o2system-ui.css"
+      href="/Frontend/assets/packages/o2system-ui/o2system-ui.css"
     />
     <link
       rel="stylesheet"
       type="text/css"
       media="all"
-      href="assets/packages/owl-carousel/owl-carousel.css"
+      href="/Frontend/assets/packages/owl-carousel/owl-carousel.css"
     />
     <link
       rel="stylesheet"
       type="text/css"
       media="all"
-      href="assets/packages/cloudzoom/cloudzoom.css"
+      href="/Frontend/assets/packages/cloudzoom/cloudzoom.css"
     />
     <link
       rel="stylesheet"
       type="text/css"
       media="all"
-      href="assets/packages/thumbelina/thumbelina.css"
+      href="/Frontend/assets/packages/thumbelina/thumbelina.css"
     />
     <link
       rel="stylesheet"
       type="text/css"
       media="all"
-      href="assets/packages/bootstrap-touchspin/bootstrap-touchspin.css"
+      href="/Frontend/assets/packages/bootstrap-touchspin/bootstrap-touchspin.css"
     />
     <link
       rel="stylesheet"
       type="text/css"
       media="all"
-      href="assets/css/theme.css"
+      href="/Frontend/assets/css/theme.css"
     />
   </head>
   <body>
@@ -78,7 +78,7 @@
         <div class="container">
           <!-- Navbar Brand -->
           <a class="navbar-brand">
-            <img src="assets/img/logo/logo.jpeg" alt="Logo" />
+            <img src="/Frontend/assets/img/logo/logo.jpeg" alt="Logo" />
           </a>
           <!-- Toggle Button -->
           <button
@@ -97,13 +97,17 @@
             <!-- Navbar Menu -->
             <ul class="navbar-nav ml-auto">
               <li class="nav-item">
-                <a href="shop.html" class="nav-link">Tienda</a>
+                <a href="/Frontend/shop/shop.html" class="nav-link">Tienda</a>
               </li>
               <li class="nav-item">
-                <a href="register.html" class="nav-link">Registrarse</a>
+                <a href="/Frontend/auth/register.html" class="nav-link"
+                  >Registrarse</a
+                >
               </li>
               <li class="nav-item">
-                <a href="login.html" class="nav-link">Iniciar Sesión</a>
+                <a href="/Frontend/auth/login.html" class="nav-link"
+                  >Iniciar Sesión</a
+                >
               </li>
               <li class="nav-item dropdown">
                 <a
@@ -116,15 +120,19 @@
                   aria-expanded="false"
                 >
                   <div class="avatar-header">
-                    <img src="assets/img/logo/avatar.jpg" />
+                    <img src="/Frontend/assets/img/logo/avatar.jpg" />
                   </div>
                   John Doe
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="transaction.html"
+                  <a
+                    class="dropdown-item"
+                    href="/Frontend/admin/transaction.html"
                     >Historial de Transacciones</a
                   >
-                  <a class="dropdown-item" href="setting.html">Configuración</a>
+                  <a class="dropdown-item" href="/Frontend/pages/setting.html"
+                    >Configuración</a
+                  >
                 </div>
               </li>
               <li class="nav-item dropdown">
@@ -148,7 +156,7 @@
                         <div class="media">
                           <img
                             class="d-flex mr-3"
-                            src="assets/img/logo/avatar.jpg"
+                            src="/Frontend/assets/img/logo/avatar.jpg"
                             width="60"
                           />
                           <div class="media-body">
@@ -173,10 +181,14 @@
                       </div>
                     </li>
                     <li class="d-flex justify-content-between pl-3 pr-3 pt-3">
-                      <a href="cart.html" class="btn btn-default"
+                      <a href="/Frontend/shop/cart.html" class="btn btn-default"
                         >Ver Carrito</a
                       >
-                      <a href="checkout.html" class="btn btn-primary">Pagar</a>
+                      <a
+                        href="/Frontend/shop/checkout.html"
+                        class="btn btn-primary"
+                        >Pagar</a
+                      >
                     </li>
                   </ul>
                 </div>
@@ -192,7 +204,7 @@
       <div class="banner">
         <div
           class="jumbotron jumbotron-bg text-center rounded-0"
-          style="background-image: url('assets/img/bg-header.jpg')"
+          style="background-image: url('/Frontend/assets/img/bg-header.jpg')"
         >
           <div class="container">
             <h1 class="pt-5">Finalizar Compra</h1>
@@ -306,8 +318,10 @@
           <div class="col-md-3">
             <h5>Enlaces</h5>
             <ul>
-              <li><a href="contact.html">Contáctanos</a></li>
-              <li><a href="faq.html">Preguntas Frecuentes</a></li>
+              <li><a href="/Frontend/pages/contact.html">Contáctanos</a></li>
+              <li>
+                <a href="/Frontend/pages/faq.html">Preguntas Frecuentes</a>
+              </li>
             </ul>
           </div>
           <div class="col-md-3">
@@ -331,10 +345,13 @@
       </div>
     </footer>
 
-    <script type="text/javascript" src="assets/js/jquery.min.js"></script>
     <script
       type="text/javascript"
-      src="assets/js/bootstrap.bundle.min.js"
+      src="/Frontend/assets/js/jquery.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="/Frontend/assets/js/bootstrap.bundle.min.js"
     ></script>
   </body>
 </html>

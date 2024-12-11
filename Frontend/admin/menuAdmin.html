@@ -12,20 +12,20 @@
       rel="stylesheet"
       type="text/css"
       media="all"
-      href="assets/packages/bootstrap/bootstrap.css"
+      href="/Frontend/assets/packages/bootstrap/bootstrap.css"
     />
     <link
       rel="stylesheet"
       type="text/css"
       media="all"
-      href="assets/css/theme.css"
+      href="/Frontend/assets/css/theme.css"
     />
   </head>
   <body>
     <div class="page-header">
       <div
         class="jumbotron jumbotron-bg text-center rounded-0"
-        style="background-image: url('assets/img/bg-header.jpg')"
+        style="background-image: url('/Frontend/assets/img/bg-header.jpg')"
       ></div>
     </div>
     <div id="page-content" class="page-content">
@@ -40,7 +40,7 @@
               <th>Descripción</th>
               <th>Precio Unitario</th>
               <th>Stock</th>
-             
+              <th colspan="2">Opciones de Producto</th>
             </tr>
           </thead>
           <tbody id="data"></tbody>
@@ -139,7 +139,7 @@
               <button
                 type="button"
                 class="btn btn-info btn-block"
-                onclick="location.href='shop.html'"
+                onclick="location.href='/Frontend/shop/shop.html'"
               >
                 Salir
               </button>
@@ -201,7 +201,6 @@
         &copy; Tienda Orgánica. Todos los derechos reservados.
       </p>
     </footer>
-    <script src="PprocesoCRUD.js"></script>
+    <script src="/Frontend/js/PprocesoCRUD.js"></script>
   </body>
 </html>
-
